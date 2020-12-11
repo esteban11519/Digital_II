@@ -210,18 +210,36 @@ static void vga_test(void)
 */
 static void camara_test(void)
 {
-	unsigned short temp2 =0xFF;
-	printf("Test del los camara... se interrumpe con el botton 1\n");
+	unsigned short figura=0;
+	unsigned short color=0;
+	unsigned short done=0;	
+	
+
 	while(!(buttons_in_read()&1)) {
-		unsigned short temp = camara_cntrl_mem_px_data_read();
-		if (temp2 != temp){
-			printf("el bus de la camara es : %i\n", temp);
-			printf("el boton de la camara esta en: %i\n",camara_cntrl_done_read());
+
+		camara_cntrl_init_procesamiento_write(1);
+
+		while(!done){
+			figura=camara_cntrl_figure_read();
+			color=camara_cntrl_color_read();
+			done=camara_cntrl_done_read();
+		}
+
+		if(figura==1) printf("Triangulo\n");
+		else if(figura==2) printf("Circulo\n");
+		else if(figura==3) printf("Cuadrado\n");
+		else if(figura==0) printf("Figura no definida\n");
+
+		if(color==1) printf("Rojo\n");
+		else if(color==2) printf("Verde\n");
+		else if(color==3) printf("Azul\n");
+		else if(color==0) printf("Color no definido\n");
+		 
+	}
+
+	
 			//printf("la habilitacion de la interrupción esta en : %i %i %i\n",camara_cntrl_ev_enable_read(), camara_cntrl_ev_status_read(), camara_cntrl_ev_pending_read());
 			//camara_isr();
-			temp2 = temp;
-		}
-	}
 }
 
 static void console_service(void)

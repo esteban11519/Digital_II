@@ -6,7 +6,7 @@
 <Project Version="7" Minor="44" Path="/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/nexys4ddr.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="99ea48c07d7c4f5888391a39d34c1063"/>
+    <Option Name="Id" Val="5cb9bdf5f532462e893ea68afce44e74"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -73,6 +73,13 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../../module/verilog/camara/cam_read.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../module/verilog/camara/procesamiento.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

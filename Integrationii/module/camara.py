@@ -24,16 +24,13 @@ class Camara(Module,AutoCSR):
         self.vsync = vsync  
         self.px_data = cam_data_in # datos de la cámara
        
-              
-
-
-
-        # Mi software accede a estos registros, van en el mapa de memoria
-
-        self.done= CSRStatus() # registro de lectura de 1 bit. Read
-        
-        self.mem_px_addr = CSRStorage(15) # Dispongo de 2^16 direcciones de memeria para almacenar. Read and Write de  15 bits
-        self.mem_px_data = CSRStatus(8)  # Puedo sacar lso datos. Read de 8 bits
+        # Mapa de memoria              
+            # Registros de lectura
+        self.color=CSRStatus(2) # 1: Rojo, 2:Green, 3:Blue
+        self.figure=CSRStatus(2) # 1:Triángulo,2:Círculo,3:cuadrado
+        self.done=CSRStatus() # registro de lectura de 1 bit. Read
+            # Registro de escritura/lectura
+        self.init_procesamiento = CSRStorage() # Iniciar procesamiento de un bit
 
         # En esta parte se pasa de Python a Verilog
         # i_: Entrada
@@ -60,10 +57,14 @@ class Camara(Module,AutoCSR):
             i_CAM_px_data=self.px_data,
             
 
-            # DataPath
-            o_done =self.done.status,
-            i_mem_px_addr=self.mem_px_addr.storage,
-            o_mem_px_data= self.mem_px_data.status,
+            # Mapa de memoria
+                # entradas
+            i_init_procesamiento=self.init_procesamiento.storage,
+	         	#salidas
+		    o_color=self.color.status, # 1: Rojo, 2:Green, 3:Blue
+		    o_figure=self.figure.status, # 1: Triángulo, 2: Círculo, 3: cuadrado
+		    o_done=self.done.status,
+
         )
         
         

@@ -9,6 +9,7 @@ set_msg_config -id {Common 17-55} -new_severity {Warning}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/camara.v}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/buffer_ram_dp.v}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/cam_read.v}
+read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/VGA_driver.v}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/PLL/clk24_25_nexys4.v}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/PLL/clk24_25_nexys4_0.v}

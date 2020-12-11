@@ -33,6 +33,7 @@ class BaseSoC(SoCCore):
 		platform.add_source("module/verilog/camara/camara.v")
 		platform.add_source("module/verilog/camara/buffer_ram_dp.v")
 		platform.add_source("module/verilog/camara/cam_read.v")
+		platform.add_source("module/verilog/camara/procesamiento.v")
 		platform.add_source("module/verilog/camara/VGA_driver.v")
 		platform.add_source("module/verilog/camara/PLL/clk24_25_nexys4.v")
 		platform.add_source("module/verilog/camara/PLL/clk24_25_nexys4_0.v")

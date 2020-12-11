@@ -42,13 +42,17 @@ module camara #(
 		input  CAM_href,		// Sennal HREF de la camara. 
 		input  CAM_vsync,		// Sennal VSYNC de la camara.
 		input  [7:0]CAM_px_data,
-		// para los estados
-
-		output done,
-		input [AW-1:0] mem_px_addr,
-		output [7:0]  mem_px_data
-		/* incluir el resto de señales necesarias*/
-   );
+		
+		// Mapa de memoria
+			// salidas
+		input init_procesamiento,
+	 		//salidas
+		
+		output [1:0] color, // 1: Rojo, 2:Green, 3:Blue
+		output [1:0] figure, // 1: Triángulo, 2: Círculo, 3: cuadrado
+		output    done
+    
+		   );
 
 
 	// TAMANO DE ADQUISICION DE LA CAMARA
@@ -125,6 +129,8 @@ module camara #(
 	Modulo de captura de datos /captura_de_datos_downsampler = cam_read
 	**************************************************************************** */
 
+	
+
 	cam_read #(AW,DW) cam_read
 	(
 			.CAM_px_data(CAM_px_data),
@@ -140,6 +146,31 @@ module camara #(
 			.DP_RAM_data_in(DP_RAM_data_in)
 
 		);
+
+	/******************************************************************************
+En esta parte se agrega el m�dulo de procesamiento
+
+*******************************************************************************/
+
+procesamiento procesamiento(
+		//entradas
+		.clk(clk),
+		.rst(rst),
+		.addr_in(DP_RAM_addr_in), 		// Dirección entrada dada por el capturador.
+	    .data_in(DP_RAM_data_in),		// Datos que entran de la cámara.
+	    .regwrite(DP_RAM_regW), 		// Enable.
+	
+	    // Mapa de memoria
+	    
+	    //Entradas
+	    .init_procesamiento(init_procesamiento),
+	    //salidas
+	    .color(color),
+	    .figure(figure),
+	    .done(done)
+	    
+   );
+
 
 
 	/* ****************************************************************************
