@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu Dec 10 18:21:01 2020
-# Process ID: 23496
+# Start of session at: Fri Dec 11 15:23:10 2020
+# Process ID: 28378
 # Current directory: /home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware
 # Command line: vivado -mode batch -source nexys4ddr.tcl
 # Log file: /home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/vivado.log
@@ -31,11 +31,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23697 
+INFO: Helper process launched with PID 28419 
 WARNING: [Synth 8-2507] parameter declaration becomes local in camara with formal parameter declaration list [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/camara.v:61]
 WARNING: [Synth 8-2507] parameter declaration becomes local in camara with formal parameter declaration list [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/camara.v:62]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1889.664 ; gain = 204.652 ; free physical = 1913 ; free virtual = 8350
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1889.664 ; gain = 204.652 ; free physical = 165 ; free virtual = 6316
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'nexys4ddr' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/nexys4ddr.v:4]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/nexys4ddr.v:765]
@@ -398,7 +398,7 @@ WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_rd[0]
 WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_wait
 WARNING: [Synth 8-3331] design picorv32 has unconnected port pcpi_ready
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1961.570 ; gain = 276.559 ; free physical = 1930 ; free virtual = 8353
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1960.570 ; gain = 275.559 ; free physical = 235 ; free virtual = 6327
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -411,12 +411,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1976.414 ; gain = 291.402 ; free physical = 1931 ; free virtual = 8356
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1975.414 ; gain = 290.402 ; free physical = 241 ; free virtual = 6332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1976.414 ; gain = 291.402 ; free physical = 1931 ; free virtual = 8356
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1975.414 ; gain = 290.402 ; free physical = 241 ; free virtual = 6332
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1983.352 ; gain = 0.000 ; free physical = 1919 ; free virtual = 8345
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1983.352 ; gain = 0.000 ; free physical = 231 ; free virtual = 6321
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -435,26 +435,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/nexys4ddr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2142.164 ; gain = 0.000 ; free physical = 1824 ; free virtual = 8252
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2139.195 ; gain = 0.000 ; free physical = 157 ; free virtual = 6255
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2142.164 ; gain = 0.000 ; free physical = 1820 ; free virtual = 8248
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2139.195 ; gain = 0.000 ; free physical = 157 ; free virtual = 6255
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2142.164 ; gain = 457.152 ; free physical = 1891 ; free virtual = 8325
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2139.195 ; gain = 454.184 ; free physical = 239 ; free virtual = 6334
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2142.164 ; gain = 457.152 ; free physical = 1891 ; free virtual = 8325
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2139.195 ; gain = 454.184 ; free physical = 239 ; free virtual = 6334
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2142.164 ; gain = 457.152 ; free physical = 1890 ; free virtual = 8325
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2139.195 ; gain = 454.184 ; free physical = 239 ; free virtual = 6334
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'cam_read'
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/opt/litex/pythondata-cpu-picorv32/pythondata_cpu_picorv32/verilog/picorv32.v:1235]
@@ -472,7 +472,7 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_4_reg' and i
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'sequential' in module 'cam_read'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2142.164 ; gain = 457.152 ; free physical = 1897 ; free virtual = 8325
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2139.195 ; gain = 454.184 ; free physical = 224 ; free virtual = 6319
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -487,8 +487,9 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     63 Bit       Adders := 1     
 	   2 Input     33 Bit       Adders := 3     
-	   2 Input     32 Bit       Adders := 18    
+	   2 Input     32 Bit       Adders := 15    
 	   3 Input     32 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 3     
 	   2 Input     15 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 1     
@@ -518,7 +519,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 9     
 	                3 Bit    Registers := 5     
 	                2 Bit    Registers := 5     
-	                1 Bit    Registers := 154   
+	                1 Bit    Registers := 150   
 +---RAMs : 
 	             384K Bit         RAMs := 1     
 	              80K Bit         RAMs := 1     
@@ -539,17 +540,18 @@ Detailed RTL Component Info :
 	   2 Input     15 Bit        Muxes := 2     
 	   4 Input     15 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 2     
-	   2 Input     12 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 3     
 	   4 Input     12 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 1     
 	   4 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 1     
 	   3 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 15    
+	   6 Input      8 Bit        Muxes := 2     
 	   4 Input      8 Bit        Muxes := 2     
 	   3 Input      8 Bit        Muxes := 1     
 	  12 Input      8 Bit        Muxes := 1     
 	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 13    
 	   4 Input      7 Bit        Muxes := 1     
 	   3 Input      6 Bit        Muxes := 1     
 	   4 Input      6 Bit        Muxes := 1     
@@ -563,15 +565,14 @@ Detailed RTL Component Info :
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 5     
-	   6 Input      3 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 11    
+	   2 Input      2 Bit        Muxes := 10    
 	   9 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 115   
+	   2 Input      1 Bit        Muxes := 106   
 	   4 Input      1 Bit        Muxes := 22    
-	   6 Input      1 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 10    
 	   9 Input      1 Bit        Muxes := 34    
 	   5 Input      1 Bit        Muxes := 4     
 	  12 Input      1 Bit        Muxes := 7     
@@ -637,7 +638,7 @@ Detailed RTL Component Info :
 Module procesamiento 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 3     
+	   2 Input     19 Bit       Adders := 3     
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 2     
 	   3 Input      7 Bit       Adders := 1     
@@ -646,16 +647,13 @@ Detailed RTL Component Info :
 +---Registers : 
 	               12 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 3     
-	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
-	   6 Input      3 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 17    
-	   6 Input      1 Bit        Muxes := 8     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 8     
 Module buffer_ram_dp 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -929,210 +927,210 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (picorv32/
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (picorv32/compressed_instr_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (picorv32/\cpu_state_reg[4] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (picorv32/latched_compr_reg)
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/color_reg[1]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:135]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:135]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:135]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/color_reg[0]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:135]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:135]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:135]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/figure_reg[1]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:136]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:136]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:136]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/figure_reg[0]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:136]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:136]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:136]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/done_reg/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:137]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:137]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:137]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/aux_init_procesamiento_reg/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[31]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[30]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[29]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[28]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[27]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[26]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[25]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[24]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[23]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[22]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[21]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[20]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[19]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[18]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[17]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[16]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[15]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[14]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[13]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[12]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[11]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[10]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[9]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[8]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[7]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[6]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[5]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[4]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[3]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[2]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[1]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[0]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:151]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[31]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[30]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[29]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[28]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[27]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[26]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[25]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[24]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[23]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[22]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[21]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[20]/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/color_reg[1]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:76]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:76]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:76]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/color_reg[0]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:76]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:76]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:76]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/figure_reg[1]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:77]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:77]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:77]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/figure_reg[0]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:77]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:77]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:77]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/done_reg__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:78]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:78]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:78]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[18]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[17]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[16]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[15]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[14]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[13]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[12]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[11]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[10]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[9]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[8]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[7]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[6]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[5]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[4]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[3]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[2]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[1]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/G_reg[0]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[18]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[17]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[16]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[15]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[14]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[13]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[12]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[11]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[10]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[9]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[8]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[7]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[6]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[5]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[4]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[3]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[2]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[1]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/B_reg[0]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/R_reg[18]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/R_reg[17]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/R_reg[16]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/R_reg[15]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/R_reg[14]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/R_reg[13]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'camara/procesamiento/R_reg[12]__0/Q' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
 INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:152]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:150]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:82]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:82]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:82]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:82]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:82]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:82]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:82]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:83]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:83]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:83]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:83]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:83]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:83]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:88]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:87]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:87]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:87]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:87]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:87]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:87]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:87]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:86]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:86]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/procesamiento.v:86]
 INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 2142.164 ; gain = 457.152 ; free physical = 1848 ; free virtual = 8285
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 2139.195 ; gain = 454.184 ; free physical = 183 ; free virtual = 6271
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1189,13 +1187,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 2142.164 ; gain = 457.152 ; free physical = 1666 ; free virtual = 8128
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 2139.195 ; gain = 454.184 ; free physical = 132 ; free virtual = 6118
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 2142.164 ; gain = 457.152 ; free physical = 1663 ; free virtual = 8125
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:17 . Memory (MB): peak = 2139.195 ; gain = 454.184 ; free physical = 132 ; free virtual = 6114
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1267,7 +1265,7 @@ INFO: [Synth 8-7053] The timing for the instance memdat_reg_5 (implemented as a 
 INFO: [Synth 8-7053] The timing for the instance memdat_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance memdat_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 2171.961 ; gain = 486.949 ; free physical = 1684 ; free virtual = 8122
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 2171.422 ; gain = 486.410 ; free physical = 196 ; free virtual = 6136
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1292,13 +1290,13 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5410] Found another clock driver \camara/clk25_24/inst/clkin1_bufg :O [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/PLL/clk24_25_nexys4_clk_wiz.v:84]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 2177.898 ; gain = 492.887 ; free physical = 1658 ; free virtual = 8126
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 2177.359 ; gain = 492.348 ; free physical = 195 ; free virtual = 6135
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 2177.898 ; gain = 492.887 ; free physical = 1657 ; free virtual = 8126
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 2177.359 ; gain = 492.348 ; free physical = 193 ; free virtual = 6135
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1317,25 +1315,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2177.898 ; gain = 492.887 ; free physical = 1659 ; free virtual = 8123
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 2177.359 ; gain = 492.348 ; free physical = 191 ; free virtual = 6135
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2177.898 ; gain = 492.887 ; free physical = 1659 ; free virtual = 8124
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 2177.359 ; gain = 492.348 ; free physical = 191 ; free virtual = 6135
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2177.898 ; gain = 492.887 ; free physical = 1661 ; free virtual = 8124
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 2177.359 ; gain = 492.348 ; free physical = 190 ; free virtual = 6135
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2177.898 ; gain = 492.887 ; free physical = 1661 ; free virtual = 8124
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 2177.359 ; gain = 492.348 ; free physical = 191 ; free virtual = 6135
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1397,13 +1395,13 @@ Report Instance Areas:
 |10    |    pcpi_mul    |picorv32_pcpi_mul       |   643|
 +------+----------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2177.898 ; gain = 492.887 ; free physical = 1661 ; free virtual = 8124
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 2177.359 ; gain = 492.348 ; free physical = 191 ; free virtual = 6135
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 438 critical warnings and 38 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 2177.898 ; gain = 327.137 ; free physical = 1719 ; free virtual = 8183
-Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2177.906 ; gain = 492.887 ; free physical = 1719 ; free virtual = 8183
+Synthesis finished with 0 errors, 315 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 2177.359 ; gain = 328.566 ; free physical = 250 ; free virtual = 6194
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 2177.367 ; gain = 492.348 ; free physical = 250 ; free virtual = 6194
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2177.906 ; gain = 0.000 ; free physical = 1800 ; free virtual = 8254
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2177.367 ; gain = 0.000 ; free physical = 317 ; free virtual = 6264
 INFO: [Netlist 29-17] Analyzing 401 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1416,7 +1414,7 @@ WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_
 WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == D} -of_objects [get_cells -hierarchical -filter {ars_ff2 == TRUE}]'. [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/nexys4ddr.xdc:326]
 Finished Parsing XDC File [/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/nexys4ddr.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2209.914 ; gain = 0.000 ; free physical = 1717 ; free virtual = 8189
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2209.375 ; gain = 0.000 ; free physical = 262 ; free virtual = 6208
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 26 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
@@ -1425,11 +1423,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 246 Infos, 196 Warnings, 201 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 2209.914 ; gain = 739.945 ; free physical = 1865 ; free virtual = 8336
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 2209.375 ; gain = 739.406 ; free physical = 411 ; free virtual = 6356
 # report_timing_summary -file nexys4ddr_timing_synth.rpt
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2439.230 ; gain = 229.855 ; free physical = 137 ; free virtual = 6070
 # report_utilization -hierarchical -file nexys4ddr_utilization_hierarchical_synth.rpt
 # report_utilization -file nexys4ddr_utilization_synth.rpt
 # opt_design -directive default
@@ -1444,35 +1443,35 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2562.301 ; gain = 119.562 ; free physical = 1601 ; free virtual = 8043
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2590.543 ; gain = 151.312 ; free physical = 151 ; free virtual = 6063
 
 Starting Cache Timing Information Task
-Ending Cache Timing Information Task | Checksum: 121198823
+Ending Cache Timing Information Task | Checksum: 15005a2b4
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2562.301 ; gain = 0.000 ; free physical = 1601 ; free virtual = 8043
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2590.543 ; gain = 0.000 ; free physical = 150 ; free virtual = 6063
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1b6282533
+Phase 1 Retarget | Checksum: 13cb4ab03
 
-Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2604.285 ; gain = 0.000 ; free physical = 1495 ; free virtual = 7939
+Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.46 . Memory (MB): peak = 2603.527 ; gain = 0.000 ; free physical = 153 ; free virtual = 5950
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 3 cells
 INFO: [Opt 31-1021] In phase Retarget, 12 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 126f70b73
+Phase 2 Constant propagation | Checksum: ef097e40
 
-Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.42 . Memory (MB): peak = 2604.285 ; gain = 0.000 ; free physical = 1495 ; free virtual = 7939
+Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.57 . Memory (MB): peak = 2603.527 ; gain = 0.000 ; free physical = 153 ; free virtual = 5950
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1260e81f2
+Phase 3 Sweep | Checksum: 194386972
 
-Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.59 . Memory (MB): peak = 2604.285 ; gain = 0.000 ; free physical = 1495 ; free virtual = 7939
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2603.527 ; gain = 0.000 ; free physical = 153 ; free virtual = 5950
 INFO: [Opt 31-389] Phase Sweep created 10 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Sweep, 48 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
@@ -1480,22 +1479,22 @@ Phase 4 BUFG optimization
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
 INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
-Phase 4 BUFG optimization | Checksum: 1260e81f2
+Phase 4 BUFG optimization | Checksum: 194386972
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.73 . Memory (MB): peak = 2604.285 ; gain = 0.000 ; free physical = 1496 ; free virtual = 7938
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.95 . Memory (MB): peak = 2603.527 ; gain = 0.000 ; free physical = 153 ; free virtual = 5951
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1260e81f2
+Phase 5 Shift Register Optimization | Checksum: 194386972
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.80 . Memory (MB): peak = 2604.285 ; gain = 0.000 ; free physical = 1496 ; free virtual = 7938
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2603.527 ; gain = 0.000 ; free physical = 151 ; free virtual = 5950
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1260e81f2
+Phase 6 Post Processing Netlist | Checksum: 194386972
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.85 . Memory (MB): peak = 2604.285 ; gain = 0.000 ; free physical = 1496 ; free virtual = 7938
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2603.527 ; gain = 0.000 ; free physical = 151 ; free virtual = 5950
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -1516,10 +1515,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2604.285 ; gain = 0.000 ; free physical = 1499 ; free virtual = 7939
-Ending Logic Optimization Task | Checksum: 1b87dfaab
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2603.527 ; gain = 0.000 ; free physical = 151 ; free virtual = 5950
+Ending Logic Optimization Task | Checksum: 119b70e44
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2604.285 ; gain = 0.000 ; free physical = 1499 ; free virtual = 7939
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2603.527 ; gain = 0.000 ; free physical = 151 ; free virtual = 5950
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -1538,27 +1537,27 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 26 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 52
-Ending PowerOpt Patch Enables Task | Checksum: 1b87dfaab
+Ending PowerOpt Patch Enables Task | Checksum: 119b70e44
 
-Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1476 ; free virtual = 7913
-Ending Power Optimization Task | Checksum: 1b87dfaab
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 328 ; free virtual = 5950
+Ending Power Optimization Task | Checksum: 119b70e44
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 2968.012 ; gain = 363.727 ; free physical = 1482 ; free virtual = 7920
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2972.223 ; gain = 368.695 ; free physical = 335 ; free virtual = 5958
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 1b87dfaab
+Ending Final Cleanup Task | Checksum: 119b70e44
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1482 ; free virtual = 7920
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 335 ; free virtual = 5958
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1482 ; free virtual = 7920
-Ending Netlist Obfuscation Task | Checksum: 1b87dfaab
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 335 ; free virtual = 5958
+Ending Netlist Obfuscation Task | Checksum: 119b70e44
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1482 ; free virtual = 7920
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 335 ; free virtual = 5957
 INFO: [Common 17-83] Releasing license: Implementation
 28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2968.012 ; gain = 525.273 ; free physical = 1482 ; free virtual = 7920
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 2972.223 ; gain = 532.992 ; free physical = 335 ; free virtual = 5957
 # place_design -directive default
 Command: place_design -directive default
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
@@ -1578,130 +1577,130 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1476 ; free virtual = 7911
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: fb0ddf2a
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 327 ; free virtual = 5950
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b4b59a68
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1476 ; free virtual = 7911
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1475 ; free virtual = 7911
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 327 ; free virtual = 5950
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 325 ; free virtual = 5950
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 
-	cam_pclk_IBUF_inst (IBUF.O) is locked to IOB_X0Y81
+	cam_pclk_IBUF_inst (IBUF.O) is locked to IOB_X0Y108
 	cam_pclk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
 Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 157aa98cf
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 151c741c5
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1474 ; free virtual = 7909
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 313 ; free virtual = 5939
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 207be84fd
+Phase 1.3 Build Placer Netlist Model | Checksum: 247cf051a
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1478 ; free virtual = 7913
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 315 ; free virtual = 5943
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 207be84fd
+Phase 1.4 Constrain Clocks/Macros | Checksum: 247cf051a
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1478 ; free virtual = 7913
-Phase 1 Placer Initialization | Checksum: 207be84fd
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 315 ; free virtual = 5943
+Phase 1 Placer Initialization | Checksum: 247cf051a
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1478 ; free virtual = 7913
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 315 ; free virtual = 5943
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 207be84fd
+Phase 2.1 Floorplanning | Checksum: 247cf051a
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1477 ; free virtual = 7912
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 314 ; free virtual = 5942
 
 Phase 2.2 Global Placement Core
 WARNING: [Place 46-29] place_design is not in timing mode. Skip physical synthesis in placer
-Phase 2.2 Global Placement Core | Checksum: 1a97b4434
+Phase 2.2 Global Placement Core | Checksum: 1a28d1c72
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:05 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1451 ; free virtual = 7885
-Phase 2 Global Placement | Checksum: 1a97b4434
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:07 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 286 ; free virtual = 5916
+Phase 2 Global Placement | Checksum: 1a28d1c72
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:05 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1453 ; free virtual = 7886
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:07 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 287 ; free virtual = 5917
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1a97b4434
+Phase 3.1 Commit Multi Column Macros | Checksum: 1a28d1c72
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:05 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1453 ; free virtual = 7886
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:07 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 285 ; free virtual = 5916
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 161e51cbd
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1621cd604
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1452 ; free virtual = 7887
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:07 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 285 ; free virtual = 5917
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: b706a184
+Phase 3.3 Area Swap Optimization | Checksum: c4842c31
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1452 ; free virtual = 7887
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:08 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 285 ; free virtual = 5917
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: b706a184
+Phase 3.4 Pipeline Register Optimization | Checksum: c4842c31
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1452 ; free virtual = 7887
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:08 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 285 ; free virtual = 5917
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 1811d5f68
+Phase 3.5 Small Shape Detail Placement | Checksum: e998eadb
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1448 ; free virtual = 7883
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:09 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 279 ; free virtual = 5912
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 119d77499
+Phase 3.6 Re-assign LUT pins | Checksum: 15a9186c4
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1448 ; free virtual = 7883
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 280 ; free virtual = 5911
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 119d77499
+Phase 3.7 Pipeline Register Optimization | Checksum: 15a9186c4
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:08 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1448 ; free virtual = 7883
-Phase 3 Detail Placement | Checksum: 119d77499
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 280 ; free virtual = 5910
+Phase 3 Detail Placement | Checksum: 15a9186c4
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1448 ; free virtual = 7883
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 280 ; free virtual = 5911
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
-Phase 4.1 Post Commit Optimization | Checksum: 119d77499
+Phase 4.1 Post Commit Optimization | Checksum: 15a9186c4
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1448 ; free virtual = 7883
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 279 ; free virtual = 5912
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 119d77499
+Phase 4.2 Post Placement Cleanup | Checksum: 15a9186c4
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1450 ; free virtual = 7884
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 282 ; free virtual = 5914
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 119d77499
+Phase 4.3 Placer Reporting | Checksum: 15a9186c4
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1449 ; free virtual = 7883
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 282 ; free virtual = 5914
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1449 ; free virtual = 7883
-Phase 4.4 Final Placement Cleanup | Checksum: c0cb5f07
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 282 ; free virtual = 5914
+Phase 4.4 Final Placement Cleanup | Checksum: 101857132
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1449 ; free virtual = 7883
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: c0cb5f07
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 281 ; free virtual = 5914
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 101857132
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1449 ; free virtual = 7883
-Ending Placer Task | Checksum: 903174b9
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 281 ; free virtual = 5914
+Ending Placer Task | Checksum: a58349d7
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1449 ; free virtual = 7883
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 281 ; free virtual = 5914
 INFO: [Common 17-83] Releasing license: Implementation
 11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:10 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1466 ; free virtual = 7900
+place_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:13 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 298 ; free virtual = 5931
 # report_utilization -hierarchical -file nexys4ddr_utilization_hierarchical_place.rpt
 # report_utilization -file nexys4ddr_utilization_place.rpt
 # report_io -file nexys4ddr_io.rpt
-report_io: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1456 ; free virtual = 7890
+report_io: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 291 ; free virtual = 5924
 # report_control_sets -verbose -file nexys4ddr_control_sets.rpt
-report_control_sets: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1464 ; free virtual = 7899
+report_control_sets: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 298 ; free virtual = 5930
 # report_clock_utilization -file nexys4ddr_clock_utilization.rpt
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 # route_design -directive default
@@ -1714,7 +1713,7 @@ WARNING: [DRC PLCK-12] Clock Placer Checks: Poor placement for routing between a
 Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
  This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 
-	cam_pclk_IBUF_inst (IBUF.O) is locked to IOB_X0Y81
+	cam_pclk_IBUF_inst (IBUF.O) is locked to IOB_X0Y108
 	cam_pclk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
@@ -1723,39 +1722,39 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Starting Routing Task
 INFO: [Route 35-270] Using Router directive 'default'.
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
-Checksum: PlaceDB: 841dae42 ConstDB: 0 ShapeSum: c13c677 RouteDB: 0
+Checksum: PlaceDB: 996f8360 ConstDB: 0 ShapeSum: c13c677 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: c59b711b
+Phase 1 Build RT Design | Checksum: a465f34b
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1249 ; free virtual = 7740
-Post Restoration Checksum: NetGraph: 4c7d1d26 NumContArr: 791e53f5 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 154 ; free virtual = 5791
+Post Restoration Checksum: NetGraph: 8dba9654 NumContArr: 16ab5cf7 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: c59b711b
+Phase 2.1 Create Timer | Checksum: a465f34b
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1226 ; free virtual = 7719
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 130 ; free virtual = 5769
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: c59b711b
+Phase 2.2 Fix Topology Constraints | Checksum: a465f34b
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1192 ; free virtual = 7685
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 124 ; free virtual = 5734
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: c59b711b
+Phase 2.3 Pre Route Cleanup | Checksum: a465f34b
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1192 ; free virtual = 7685
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 124 ; free virtual = 5734
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 12934abf3
+Phase 2.4 Update Timing | Checksum: dba8f0b5
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1163 ; free virtual = 7654
-Phase 2 Router Initialization | Checksum: 15092bb55
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:31 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 130 ; free virtual = 5716
+Phase 2 Router Initialization | Checksum: 132c1b16e
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1162 ; free virtual = 7653
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:31 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 129 ; free virtual = 5715
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -1763,77 +1762,77 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 4941
+  Number of Failed Nets               = 4937
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 4941
+  Number of Unrouted Nets             = 4937
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 226caf20c
+Phase 3 Initial Routing | Checksum: 14c790d3a
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1157 ; free virtual = 7649
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:32 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 147 ; free virtual = 5717
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 226caf20c
+Phase 4.1.1 Update Timing | Checksum: 14c790d3a
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1157 ; free virtual = 7649
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:32 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 144 ; free virtual = 5717
 WARNING: [Route 35-447] Congestion is preventing the router from routing all nets. The router will prioritize the successful completion of routing all nets over timing optimizations.
-Phase 4.1 Global Iteration 0 | Checksum: 2098cc775
+Phase 4.1 Global Iteration 0 | Checksum: 199440aea
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1160 ; free virtual = 7652
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:32 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 144 ; free virtual = 5716
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 458
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 515
+ Number of Nodes with overlaps = 7
  Number of Nodes with overlaps = 0
-Phase 4.2 Global Iteration 1 | Checksum: 1c3bf66dd
+Phase 4.2 Global Iteration 1 | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1164 ; free virtual = 7647
-Phase 4 Rip-up And Reroute | Checksum: 1c3bf66dd
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 145 ; free virtual = 5715
+Phase 4 Rip-up And Reroute | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1164 ; free virtual = 7647
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 145 ; free virtual = 5715
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 1c3bf66dd
+Phase 5.1 Delay CleanUp | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1164 ; free virtual = 7647
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 145 ; free virtual = 5715
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1c3bf66dd
+Phase 5.2 Clock Skew Optimization | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1163 ; free virtual = 7647
-Phase 5 Delay and Skew Optimization | Checksum: 1c3bf66dd
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 145 ; free virtual = 5715
+Phase 5 Delay and Skew Optimization | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1163 ; free virtual = 7647
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 145 ; free virtual = 5715
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1c3bf66dd
+Phase 6.1.1 Update Timing | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1166 ; free virtual = 7646
-Phase 6.1 Hold Fix Iter | Checksum: 1c3bf66dd
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 142 ; free virtual = 5714
+Phase 6.1 Hold Fix Iter | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1166 ; free virtual = 7647
-Phase 6 Post Hold Fix | Checksum: 1c3bf66dd
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 142 ; free virtual = 5714
+Phase 6 Post Hold Fix | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1166 ; free virtual = 7647
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:35 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 142 ; free virtual = 5714
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.02246 %
-  Global Horizontal Routing Utilization  = 1.12077 %
+  Global Vertical Routing Utilization    = 1.0467 %
+  Global Horizontal Routing Utilization  = 1.31891 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -1843,35 +1842,35 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 1c3bf66dd
+Phase 7 Route finalize | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1166 ; free virtual = 7647
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 142 ; free virtual = 5714
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1c3bf66dd
+Phase 8 Verifying routed nets | Checksum: 1cb89959b
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1165 ; free virtual = 7646
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 141 ; free virtual = 5714
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 2125fe44c
+Phase 9 Depositing Routes | Checksum: 238b55de2
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:30 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1164 ; free virtual = 7641
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:36 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 141 ; free virtual = 5713
 
 Phase 10 Post Router Timing
-Phase 10 Post Router Timing | Checksum: 2125fe44c
+Phase 10 Post Router Timing | Checksum: 238b55de2
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:30 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1164 ; free virtual = 7641
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:36 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 139 ; free virtual = 5713
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:30 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1202 ; free virtual = 7679
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:36 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 176 ; free virtual = 5750
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 8 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:32 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1202 ; free virtual = 7679
+route_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:39 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 176 ; free virtual = 5750
 # phys_opt_design -directive default
 Command: phys_opt_design -directive default
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
@@ -1884,13 +1883,13 @@ INFO: [Common 17-83] Releasing license: Implementation
 6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 # write_checkpoint -force nexys4ddr_route.dcp
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1206 ; free virtual = 7678
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 179 ; free virtual = 5752
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2968.012 ; gain = 0.000 ; free physical = 1192 ; free virtual = 7677
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.84 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 166 ; free virtual = 5750
 INFO: [Common 17-1381] The checkpoint '/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/nexys4ddr_route.dcp' has been generated.
 # report_timing_summary -no_header -no_detailed_paths
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
@@ -2062,6 +2061,7 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/esteban/programs/Viva
 INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/nexys4ddr_drc.rpt.
 report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2972.223 ; gain = 0.000 ; free physical = 139 ; free virtual = 5729
 # report_timing_summary -datasheet -max_paths 10 -file nexys4ddr_timing.rpt
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
@@ -2106,10 +2106,10 @@ Creating bitstream...
 Writing bitstream ./nexys4ddr.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Dec 10 18:24:04 2020. For additional details about this file, please refer to the WebTalk help file at /home/esteban/programs/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Dec 11 15:26:57 2020. For additional details about this file, please refer to the WebTalk help file at /home/esteban/programs/Vivado/2019.2/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 10 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 3187.883 ; gain = 219.871 ; free physical = 1164 ; free virtual = 7627
+write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 3190.297 ; gain = 218.074 ; free physical = 458 ; free virtual = 5664
 # quit
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 10 18:24:04 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 11 15:26:57 2020...

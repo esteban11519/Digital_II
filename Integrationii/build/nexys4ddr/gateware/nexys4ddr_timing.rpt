@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Thu Dec 10 18:23:40 2020
+| Date         : Fri Dec 11 15:26:25 2020
 | Host         : esteban running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_timing_summary -datasheet -max_paths 10 -file nexys4ddr_timing.rpt
 | Design       : nexys4ddr
@@ -186,7 +186,7 @@ Combinational Delays
 From | To       |   Max     | Process |   Min     | Process |
 Port | Port     | Delay(ns) | Corner  | Delay(ns) | Corner  |
 -----+----------+-----------+---------+-----------+---------+
-clk  | cam_xclk |    10.199 | SLOW    |     2.947 | FAST    |
+clk  | cam_xclk |    10.157 | SLOW    |     2.915 | FAST    |
 -----+----------+-----------+---------+-----------+---------+
 
 

@@ -222,7 +222,7 @@ static void camara_test(void)
         camara_cntrl_init_procesamiento_write(1);
         delay_ms(2);
         camara_cntrl_init_procesamiento_write(0);
-        delay_ms(500);
+        delay_ms(2);
 		figura=camara_cntrl_figure_read();
 		color=camara_cntrl_color_read();
 		done=camara_cntrl_done_read();
