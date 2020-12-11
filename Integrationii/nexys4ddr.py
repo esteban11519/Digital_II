@@ -78,22 +78,22 @@ _io = [
 
     ("btnu", 0, Pins("M18"), IOStandard("LVCMOS33")),
  
-    ("cam_xclk", 0, Pins("V11"), IOStandard("LVCMOS33")),
-    ("cam_pclk", 0, Pins("P18"), IOStandard("LVCMOS33")),
-    ("cam_vsync", 0, Pins("G4"), IOStandard("LVCMOS33")),
-    ("cam_href", 0, Pins("H1"), IOStandard("LVCMOS33")),
-    ("cam_pwdn", 0, Pins("G1"), IOStandard("LVCMOS33")),
+    ("cam_xclk", 0, Pins("F18"), IOStandard("LVCMOS33")),
+    ("cam_pclk", 0, Pins("E18"), IOStandard("LVCMOS33")),
+    ("cam_vsync", 0, Pins("D18"), IOStandard("LVCMOS33")),
+    ("cam_href", 0, Pins("E17"), IOStandard("LVCMOS33")),
+    ("cam_pwdn", 0, Pins("G18"), IOStandard("LVCMOS33")),
     
  
 
-    ("cam_data_in",  0, Pins("T8"), IOStandard("LVCMOS33")),
-    ("cam_data_in",  1, Pins("U8"), IOStandard("LVCMOS33")),
-    ("cam_data_in", 2, Pins("R16"), IOStandard("LVCMOS33")),
-    ("cam_data_in", 3, Pins("T13"), IOStandard("LVCMOS33")),
-    ("cam_data_in", 4, Pins("H6"), IOStandard("LVCMOS33")),
-    ("cam_data_in", 5, Pins("U12"), IOStandard("LVCMOS33")),
-    ("cam_data_in", 6, Pins("U11"), IOStandard("LVCMOS33")),
-    ("cam_data_in", 7, Pins("V10"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 0, Pins("H16"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 1, Pins("H14"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 2, Pins("G13"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 3, Pins("G16"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 4, Pins("F13"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 5, Pins("F16"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 6, Pins("E16"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 7, Pins("D14"), IOStandard("LVCMOS33")),
 
 
     ("cpu_reset", 0, Pins("C12"), IOStandard("LVCMOS33")),
