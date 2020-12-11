@@ -214,18 +214,21 @@ static void camara_test(void)
 	unsigned short color=0;
 	unsigned short done=0;	
 	
-		camara_cntrl_init_procesamiento_write(1);
-		printf("Hola mundo");
-		delay_ms(1);
+		
+	printf("Hola mundo");
+		
 	while(!(buttons_in_read()&1)) {
 
+        camara_cntrl_init_procesamiento_write(1);
+        delay_ms(2);
+        camara_cntrl_init_procesamiento_write(0);
+        delay_ms(500);
 		figura=camara_cntrl_figure_read();
 		color=camara_cntrl_color_read();
 		done=camara_cntrl_done_read();
 		
-			printf("init_procesamiento : %i\n", camara_cntrl_init_procesamiento_read());
-			printf("Done : %i\n", done); 
-
+		printf("init_procesamiento : %i\n", camara_cntrl_init_procesamiento_read());
+		printf("Done : %i\n", done); 
 
 		if(figura==1) 
 			printf("Triangulo\n");
@@ -245,10 +248,9 @@ static void camara_test(void)
 		else if(color==0) 
 			printf("Color no definido\n");
 			
-		delay_ms(10);
+		delay_ms(500);
 	} 
 
-printf("aun no quiere funcionar");
 
 		 
 	
@@ -257,7 +259,6 @@ printf("aun no quiere funcionar");
 			//printf("la habilitacion de la interrupción esta en : %i %i %i\n",camara_cntrl_ev_enable_read(), camara_cntrl_ev_status_read(), camara_cntrl_ev_pending_read());
 			//camara_isr();
 }
-
 
 static void console_service(void)
 {
