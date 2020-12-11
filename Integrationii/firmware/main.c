@@ -214,33 +214,50 @@ static void camara_test(void)
 	unsigned short color=0;
 	unsigned short done=0;	
 	
-
+		camara_cntrl_init_procesamiento_write(1);
+		printf("Hola mundo");
+		delay_ms(1);
 	while(!(buttons_in_read()&1)) {
 
-		camara_cntrl_init_procesamiento_write(1);
+		figura=camara_cntrl_figure_read();
+		color=camara_cntrl_color_read();
+		done=camara_cntrl_done_read();
+		
+			printf("init_procesamiento : %i\n", camara_cntrl_init_procesamiento_read());
+			printf("Done : %i\n", done); 
 
-		while(!done){
-			figura=camara_cntrl_figure_read();
-			color=camara_cntrl_color_read();
-			done=camara_cntrl_done_read();
-		}
 
-		if(figura==1) printf("Triangulo\n");
-		else if(figura==2) printf("Circulo\n");
-		else if(figura==3) printf("Cuadrado\n");
-		else if(figura==0) printf("Figura no definida\n");
+		if(figura==1) 
+			printf("Triangulo\n");
+		else if(figura==2) 
+			printf("Circulo\n");
+		else if(figura==3) 
+			printf("Cuadrado\n");
+		else if(figura==0) 
+			printf("Figura no definida\n");
 
-		if(color==1) printf("Rojo\n");
-		else if(color==2) printf("Verde\n");
-		else if(color==3) printf("Azul\n");
-		else if(color==0) printf("Color no definido\n");
+		if(color==1) 
+			printf("Rojo\n");
+		else if(color==2) 
+			printf("Verde\n");
+		else if(color==3) 
+			printf("Azul\n");
+		else if(color==0) 
+			printf("Color no definido\n");
+			
+		delay_ms(10);
+	} 
+
+printf("aun no quiere funcionar");
+
 		 
-	}
+	
 
 	
 			//printf("la habilitacion de la interrupción esta en : %i %i %i\n",camara_cntrl_ev_enable_read(), camara_cntrl_ev_status_read(), camara_cntrl_ev_pending_read());
 			//camara_isr();
 }
+
 
 static void console_service(void)
 {
