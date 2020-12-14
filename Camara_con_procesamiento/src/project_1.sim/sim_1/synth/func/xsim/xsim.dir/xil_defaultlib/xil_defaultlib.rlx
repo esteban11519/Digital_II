@@ -1,0 +1,6 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.sim/sim_1/synth/func/xsim/test_cam_TB_func_synth.v,1607935750,verilog,,/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/simulation/test_cam_TB.v,,VGA_Driver;buffer_ram_dp;cam_read;clk24_25_nexys4;clk24_25_nexys4_clk_wiz;glbl;procesamiento;test_cam,,,,,,,,
+/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/simulation/test_cam_TB.v,1607931758,verilog,,,,test_cam_TB,,,,,,,,

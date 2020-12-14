@@ -147,18 +147,21 @@ module camara #(
 
 		);
 
-	/******************************************************************************
+/******************************************************************************
 En esta parte se agrega el m�dulo de procesamiento
 
 *******************************************************************************/
 
-procesamiento procesamiento(
+wire [AW-1:0]proc_addr_in;
+wire [DW-1:0]proc_data_in;
+
+procesamiento my_procesamiento(
 		//entradas
 		.clk(clk),
 		.rst(rst),
-		.addr_in(DP_RAM_addr_in), 		// Dirección entrada dada por el capturador.
-	    .data_in(DP_RAM_data_in),		// Datos que entran de la cámara.
-	    .regwrite(DP_RAM_regW), 		// Enable.
+		.proc_addr_in(proc_addr_in), 		// Dirección entrada dada por el Buffer.
+	    .proc_data_in(proc_data_in),		// Datos que salen del Buffer.
+	    
 	
 	    // Mapa de memoria
 	    
@@ -190,8 +193,13 @@ procesamiento procesamiento(
 		.addr_out(DP_RAM_addr_out),		// Direccion salida dada por VGA.
 			// Salida.
 			
-		.data_out(data_mem)			    // Datos enviados a la VGA.
+		.data_out(data_mem),			    // Datos enviados a la VGA.
 		//.reset(rst)                   //(Sin usar)
+		
+	// Salidas procesador
+	
+		.proc_data_in(proc_data_in),
+    	.proc_addr_in(proc_addr_in)
 	);
 
 	/* ****************************************************************************

@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.sim/sim_1/synth/func/xsim/test_cam_TB_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_Driver
+INFO: [VRFC 10-311] analyzing module buffer_ram_dp
+INFO: [VRFC 10-311] analyzing module cam_read
+INFO: [VRFC 10-311] analyzing module clk24_25_nexys4
+INFO: [VRFC 10-311] analyzing module clk24_25_nexys4_clk_wiz
+INFO: [VRFC 10-311] analyzing module procesamiento
+INFO: [VRFC 10-311] analyzing module test_cam
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/simulation/test_cam_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_cam_TB
+WARNING: [VRFC 10-3248] data object 'init_procesamiento' is already declared [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/simulation/test_cam_TB.v:92]
+WARNING: [VRFC 10-3703] second declaration of 'init_procesamiento' ignored [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/simulation/test_cam_TB.v:92]

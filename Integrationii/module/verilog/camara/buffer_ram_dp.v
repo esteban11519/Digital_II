@@ -40,8 +40,11 @@ module buffer_ram_dp#(
 
 	input clk_r, 				    // Reloj 25MHz VGA.
 	input [AW-1: 0] addr_out, 		// DirecciÃ³n de salida dada por VGA.
-	output reg [DW-1: 0] data_out	// Datos enviados a la VGA.
+	output reg [DW-1: 0] data_out,	// Datos enviados a la VGA.
 	//input reset					// De momento no se esta usando.
+		// señales del procesamiento
+	input  [AW-1: 0]proc_addr_in,
+	output reg [DW-1: 0] proc_data_in	
 	);
 
 // Calcular el numero de posiciones totales de memoria.
@@ -61,6 +64,12 @@ always @(posedge clk_r) begin
 // Se leen los datos de las direcciones addr_out y se sacan en data_out.
 		data_out <= ram[addr_out];
 end
+
+
+always @(proc_addr_in) begin
+proc_data_in<=ram[proc_addr_in];
+end
+
 
 initial begin
 // Lee en hexadecimal (readmemb lee en binario) dentro de ram [1, pÃ¡g 217].
