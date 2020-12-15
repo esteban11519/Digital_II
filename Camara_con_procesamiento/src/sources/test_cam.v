@@ -44,11 +44,11 @@ module test_cam
 	input wire [7:0]CAM_px_data,
 
 	    // Mapa de memoria
-    input init_procesamiento,
+    input wire init_procesamiento,
 	 //salidas
-	output [1:0] color,
-	output [1:0]   figure,
-	output    done
+	output wire [1:0] color,
+	output wire [1:0]   figure,
+	output  wire  done
 	
    );
 
@@ -151,6 +151,14 @@ En esta parte se agrega el m�dulo de procesamiento
 wire [AW-1:0]proc_addr_in;
 wire [DW-1:0]proc_data_in;
 
+wire [1:0] aux_color;
+wire [1:0] aux_figure;
+wire aux_done;
+	    
+assign color=aux_color;
+assign figure=aux_figure;
+assign done=aux_done;
+
 procesamiento my_procesamiento(
 		//entradas
 		.clk(clk),
@@ -164,9 +172,9 @@ procesamiento my_procesamiento(
 	    //Entradas
 	    .init_procesamiento(init_procesamiento),
 	    //salidas
-	    .color(color),
-	    .figure(figure),
-	    .done(done)
+	    .color(aux_color),
+	    .figure(aux_figure),
+	    .done(aux_done)
 	    
    );
 

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1607934736">
-  <File Type="PA-TCL" Name="test_cam.tcl"/>
-  <File Type="REPORTS-TCL" Name="test_cam_reports.tcl"/>
-  <File Type="RDS-RDS" Name="test_cam.vds"/>
-  <File Type="RDS-UTIL" Name="test_cam_utilization_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1608053622">
+  <File Type="VDS-TIMINGSUMMARY" Name="test_cam_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="test_cam.dcp"/>
   <File Type="RDS-UTIL-PB" Name="test_cam_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="test_cam_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="test_cam_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="test_cam.vds"/>
+  <File Type="REPORTS-TCL" Name="test_cam_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="test_cam_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="test_cam.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/sources/VGA_driver.v">

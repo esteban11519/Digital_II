@@ -5,4 +5,18 @@ Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.75,...
+Compiling module xil_defaultlib.clk24_25_nexys4_clk_wiz
+Compiling module xil_defaultlib.clk24_25_nexys4
+Compiling module xil_defaultlib.cam_read
+Compiling module xil_defaultlib.procesamiento
+Compiling module xil_defaultlib.buffer_ram_dp_default
+Compiling module xil_defaultlib.VGA_Driver_default
+Compiling module xil_defaultlib.test_cam_default
+Compiling module xil_defaultlib.test_cam_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_cam_TB_behav

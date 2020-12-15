@@ -15,18 +15,18 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10813 
+INFO: Helper process launched with PID 4241 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1882.727 ; gain = 201.715 ; free physical = 539 ; free virtual = 6714
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1882.727 ; gain = 201.715 ; free physical = 3536 ; free virtual = 9446
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'test_cam' [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/test_cam.v:23]
+INFO: [Synth 8-6157] synthesizing module 'test_cam' [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/test_cam.v:23]
 	Parameter CAM_SCREEN_X bound to: 160 - type: integer 
 	Parameter CAM_SCREEN_Y bound to: 120 - type: integer 
 	Parameter AW bound to: 15 - type: integer 
 	Parameter DW bound to: 12 - type: integer 
 	Parameter imaSiz bound to: 19200 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk24_25_nexys4' [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4.v:71]
-INFO: [Synth 8-6157] synthesizing module 'clk24_25_nexys4_clk_wiz' [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk24_25_nexys4' [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk24_25_nexys4_clk_wiz' [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4_clk_wiz.v:69]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/esteban/programs/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [/home/esteban/programs/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home/esteban/programs/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
@@ -79,10 +79,10 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home/esteban/programs/Vi
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [/home/esteban/programs/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
-INFO: [Synth 8-6155] done synthesizing module 'clk24_25_nexys4_clk_wiz' (3#1) [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'clk24_25_nexys4' (4#1) [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4.v:71]
-WARNING: [Synth 8-7023] instance 'clk25_24' of module 'clk24_25_nexys4' has 5 connections declared, but only 4 given [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/test_cam.v:109]
-INFO: [Synth 8-6157] synthesizing module 'cam_read' [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/cam_read.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'clk24_25_nexys4_clk_wiz' (3#1) [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk24_25_nexys4' (4#1) [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4.v:71]
+WARNING: [Synth 8-7023] instance 'clk25_24' of module 'clk24_25_nexys4' has 5 connections declared, but only 4 given [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/test_cam.v:109]
+INFO: [Synth 8-6157] synthesizing module 'cam_read' [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/cam_read.v:21]
 	Parameter AW bound to: 15 - type: integer 
 	Parameter DW bound to: 12 - type: integer 
 	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
@@ -90,9 +90,9 @@ INFO: [Synth 8-6157] synthesizing module 'cam_read' [/home/esteban/UNAL/GitHub/w
 	Parameter BYTE2 bound to: 2 - type: integer 
 	Parameter NOTHING bound to: 3 - type: integer 
 	Parameter imaSiz bound to: 19199 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/cam_read.v:64]
-INFO: [Synth 8-6155] done synthesizing module 'cam_read' (5#1) [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/cam_read.v:21]
-INFO: [Synth 8-6157] synthesizing module 'procesamiento' [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/procesamiento.v:3]
+INFO: [Synth 8-226] default block is never used [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/cam_read.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'cam_read' (5#1) [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/cam_read.v:21]
+INFO: [Synth 8-6157] synthesizing module 'procesamiento' [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/procesamiento.v:3]
 	Parameter n bound to: 120 - type: integer 
 	Parameter m bound to: 160 - type: integer 
 	Parameter AW bound to: 15 - type: integer 
@@ -109,18 +109,18 @@ INFO: [Synth 8-6157] synthesizing module 'procesamiento' [/home/esteban/UNAL/Git
 	Parameter NOTHING bound to: 6 - type: integer 
 	Parameter imaSiz bound to: 19200 - type: integer 
 	Parameter min_ancho_actual bound to: 3 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element aux_init_procesamiento_reg was removed.  [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/procesamiento.v:82]
-WARNING: [Synth 8-6014] Unused sequential element aux_init_procesamiento_reg was removed.  [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/procesamiento.v:168]
-INFO: [Synth 8-6155] done synthesizing module 'procesamiento' (6#1) [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/procesamiento.v:3]
-INFO: [Synth 8-6157] synthesizing module 'buffer_ram_dp' [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/buffer_ram_dp.v:27]
+WARNING: [Synth 8-6014] Unused sequential element aux_init_procesamiento_reg was removed.  [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/procesamiento.v:82]
+WARNING: [Synth 8-6014] Unused sequential element aux_init_procesamiento_reg was removed.  [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/procesamiento.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'procesamiento' (6#1) [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/procesamiento.v:3]
+INFO: [Synth 8-6157] synthesizing module 'buffer_ram_dp' [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/buffer_ram_dp.v:27]
 	Parameter AW bound to: 15 - type: integer 
 	Parameter DW bound to: 12 - type: integer 
-	Parameter imageFILE bound to: /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/images/circulo.men - type: string 
+	Parameter imageFILE bound to: /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/images/circulo.men - type: string 
 	Parameter NPOS bound to: 32768 - type: integer 
 	Parameter imaSiz bound to: 19200 - type: integer 
-INFO: [Synth 8-3876] $readmem data file '/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/images/circulo.men' is read successfully [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/buffer_ram_dp.v:77]
-INFO: [Synth 8-6155] done synthesizing module 'buffer_ram_dp' (7#1) [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/buffer_ram_dp.v:27]
-INFO: [Synth 8-6157] synthesizing module 'VGA_Driver' [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.srcs/sources_1/imports/sources/VGA_driver.v:19]
+INFO: [Synth 8-3876] $readmem data file '/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/images/circulo.men' is read successfully [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/buffer_ram_dp.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_ram_dp' (7#1) [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/buffer_ram_dp.v:27]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Driver' [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.srcs/sources_1/imports/sources/VGA_driver.v:19]
 	Parameter DW bound to: 12 - type: integer 
 	Parameter SCREEN_X bound to: 640 - type: integer 
 	Parameter FRONT_PORCH_X bound to: 16 - type: integer 
@@ -132,12 +132,12 @@ INFO: [Synth 8-6157] synthesizing module 'VGA_Driver' [/home/esteban/UNAL/GitHub
 	Parameter SYNC_PULSE_Y bound to: 2 - type: integer 
 	Parameter BACK_PORCH_Y bound to: 33 - type: integer 
 	Parameter TOTAL_SCREEN_Y bound to: 525 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'VGA_Driver' (8#1) [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.srcs/sources_1/imports/sources/VGA_driver.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'test_cam' (9#1) [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/test_cam.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Driver' (8#1) [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.srcs/sources_1/imports/sources/VGA_driver.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'test_cam' (9#1) [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/test_cam.v:23]
 WARNING: [Synth 8-3917] design test_cam has port CAM_pwdn driven by constant 0
 WARNING: [Synth 8-3917] design test_cam has port CAM_reset driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1944.477 ; gain = 263.465 ; free physical = 562 ; free virtual = 6738
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1944.477 ; gain = 263.465 ; free physical = 3561 ; free virtual = 9473
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -150,45 +150,45 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1953.383 ; gain = 272.371 ; free physical = 561 ; free virtual = 6736
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1953.383 ; gain = 272.371 ; free physical = 3557 ; free virtual = 9469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1953.383 ; gain = 272.371 ; free physical = 561 ; free virtual = 6736
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1953.383 ; gain = 272.371 ; free physical = 3557 ; free virtual = 9469
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.320 ; gain = 0.000 ; free physical = 553 ; free virtual = 6729
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1956.352 ; gain = 0.000 ; free physical = 3548 ; free virtual = 9461
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/implementation/Nexys_4.xdc]
-Finished Parsing XDC File [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/implementation/Nexys_4.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/implementation/Nexys_4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_cam_propImpl.xdc].
+Parsing XDC File [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/implementation/Nexys_4.xdc]
+Finished Parsing XDC File [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/implementation/Nexys_4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/implementation/Nexys_4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_cam_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/test_cam_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2117.133 ; gain = 0.000 ; free physical = 473 ; free virtual = 6646
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2115.164 ; gain = 0.000 ; free physical = 3446 ; free virtual = 9375
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2117.133 ; gain = 0.000 ; free physical = 473 ; free virtual = 6646
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2115.164 ; gain = 0.000 ; free physical = 3446 ; free virtual = 9375
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2117.133 ; gain = 436.121 ; free physical = 546 ; free virtual = 6720
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 2115.164 ; gain = 434.152 ; free physical = 3519 ; free virtual = 9449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2117.133 ; gain = 436.121 ; free physical = 546 ; free virtual = 6720
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 2115.164 ; gain = 434.152 ; free physical = 3519 ; free virtual = 9449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2117.133 ; gain = 436.121 ; free physical = 546 ; free virtual = 6720
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 2115.164 ; gain = 434.152 ; free physical = 3519 ; free virtual = 9449
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'cam_read'
 INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'procesamiento'
@@ -214,7 +214,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'one-hot' in module 'procesamiento'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2117.133 ; gain = 436.121 ; free physical = 537 ; free virtual = 6711
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 2115.164 ; gain = 434.152 ; free physical = 3509 ; free virtual = 9439
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -256,7 +256,7 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit        Muxes := 10    
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 8     
-	   2 Input      1 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 13    
 	   4 Input      1 Bit        Muxes := 3     
 	   7 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
@@ -303,7 +303,7 @@ Detailed RTL Component Info :
 	   7 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 10    
 	   2 Input      2 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 12    
 	   7 Input      1 Bit        Muxes := 10    
 Module buffer_ram_dp 
 Detailed RTL Component Info : 
@@ -345,7 +345,7 @@ DSP Report: operator DP_RAM_addr_out1 is absorbed into DSP DP_RAM_addr_out0.
 WARNING: [Synth 8-3917] design test_cam has port CAM_pwdn driven by constant 0
 WARNING: [Synth 8-3917] design test_cam has port CAM_reset driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2117.133 ; gain = 436.121 ; free physical = 483 ; free virtual = 6662
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 2115.164 ; gain = 434.152 ; free physical = 3450 ; free virtual = 9387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -381,13 +381,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2117.133 ; gain = 436.121 ; free physical = 340 ; free virtual = 6518
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 2115.164 ; gain = 434.152 ; free physical = 3289 ; free virtual = 9232
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 2194.664 ; gain = 513.652 ; free physical = 304 ; free virtual = 6483
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:51 . Memory (MB): peak = 2194.695 ; gain = 513.684 ; free physical = 2908 ; free virtual = 9049
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -413,7 +413,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2221.664 ; gain = 540.652 ; free physical = 306 ; free virtual = 6484
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:03 . Memory (MB): peak = 2221.695 ; gain = 540.684 ; free physical = 2512 ; free virtual = 8813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -436,15 +436,15 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5410] Found another clock driver \clk25_24/inst/clkin1_bufg :O [/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4_clk_wiz.v:84]
+WARNING: [Synth 8-5410] Found another clock driver \clk25_24/inst/clkin1_bufg :O [/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4_clk_wiz.v:84]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 2221.664 ; gain = 540.652 ; free physical = 300 ; free virtual = 6479
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:11 . Memory (MB): peak = 2221.695 ; gain = 540.684 ; free physical = 2372 ; free virtual = 8740
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 2221.664 ; gain = 540.652 ; free physical = 300 ; free virtual = 6479
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:11 . Memory (MB): peak = 2221.695 ; gain = 540.684 ; free physical = 2371 ; free virtual = 8741
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -463,25 +463,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 2221.664 ; gain = 540.652 ; free physical = 299 ; free virtual = 6478
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:14 . Memory (MB): peak = 2221.695 ; gain = 540.684 ; free physical = 2394 ; free virtual = 8787
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 2221.664 ; gain = 540.652 ; free physical = 299 ; free virtual = 6478
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:14 . Memory (MB): peak = 2221.695 ; gain = 540.684 ; free physical = 2391 ; free virtual = 8786
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 2221.664 ; gain = 540.652 ; free physical = 301 ; free virtual = 6480
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2221.695 ; gain = 540.684 ; free physical = 2351 ; free virtual = 8769
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 2221.664 ; gain = 540.652 ; free physical = 301 ; free virtual = 6480
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2221.695 ; gain = 540.684 ; free physical = 2351 ; free virtual = 8769
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -501,11 +501,11 @@ Report Cell Usage:
 |2     |CARRY4     |    50|
 |3     |DSP48E1    |     1|
 |4     |LUT1       |     9|
-|5     |LUT2       |   348|
-|6     |LUT3       |   261|
-|7     |LUT4       |  3347|
-|8     |LUT5       |   458|
-|9     |LUT6       |  6108|
+|5     |LUT2       |   296|
+|6     |LUT3       |   264|
+|7     |LUT4       |  3342|
+|8     |LUT5       |   472|
+|9     |LUT6       |  6145|
 |10    |MMCME2_ADV |     1|
 |11    |MUXF7      |  1632|
 |12    |MUXF8      |   768|
@@ -520,27 +520,27 @@ Report Instance Areas:
 +------+-------------------+------------------------+------+
 |      |Instance           |Module                  |Cells |
 +------+-------------------+------------------------+------+
-|1     |top                |                        | 17761|
-|2     |  DP_RAM           |buffer_ram_dp           |  9814|
+|1     |top                |                        | 17758|
+|2     |  DP_RAM           |buffer_ram_dp           |  9817|
 |3     |  VGA_640x480      |VGA_Driver              |   118|
 |4     |  cam_read         |cam_read                |  7338|
 |5     |  clk25_24         |clk24_25_nexys4         |     5|
 |6     |    inst           |clk24_25_nexys4_clk_wiz |     5|
-|7     |  my_procesamiento |procesamiento           |   447|
+|7     |  my_procesamiento |procesamiento           |   441|
 +------+-------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 2221.664 ; gain = 540.652 ; free physical = 301 ; free virtual = 6480
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2221.695 ; gain = 540.684 ; free physical = 2351 ; free virtual = 8769
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 2221.664 ; gain = 376.902 ; free physical = 360 ; free virtual = 6539
-Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 2221.672 ; gain = 540.652 ; free physical = 360 ; free virtual = 6539
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:12 . Memory (MB): peak = 2221.695 ; gain = 378.902 ; free physical = 2411 ; free virtual = 8829
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:16 . Memory (MB): peak = 2221.703 ; gain = 540.684 ; free physical = 2411 ; free virtual = 8829
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2221.672 ; gain = 0.000 ; free physical = 421 ; free virtual = 6599
+Netlist sorting complete. Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.36 . Memory (MB): peak = 2221.703 ; gain = 0.000 ; free physical = 2440 ; free virtual = 8862
 INFO: [Netlist 29-17] Analyzing 6548 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2253.680 ; gain = 0.000 ; free physical = 316 ; free virtual = 6494
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2253.711 ; gain = 0.000 ; free physical = 2353 ; free virtual = 8776
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4096 instances were transformed.
   RAM64M => RAM64M (RAMD64E(x4)): 4096 instances
@@ -548,11 +548,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 39 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 2253.680 ; gain = 783.711 ; free physical = 477 ; free virtual = 6655
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2253.680 ; gain = 0.000 ; free physical = 477 ; free virtual = 6655
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:41 . Memory (MB): peak = 2253.711 ; gain = 783.742 ; free physical = 2514 ; free virtual = 8937
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2253.711 ; gain = 0.000 ; free physical = 2514 ; free virtual = 8937
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.runs/synth_1/test_cam.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2277.691 ; gain = 24.012 ; free physical = 479 ; free virtual = 6661
+INFO: [Common 17-1381] The checkpoint '/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.runs/synth_1/test_cam.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2277.723 ; gain = 24.012 ; free physical = 2508 ; free virtual = 8934
 INFO: [runtcl-4] Executing : report_utilization -file test_cam_utilization_synth.rpt -pb test_cam_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 14 03:33:48 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 15 12:35:40 2020...

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.runs/synth_1'
+HD_PWD='/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

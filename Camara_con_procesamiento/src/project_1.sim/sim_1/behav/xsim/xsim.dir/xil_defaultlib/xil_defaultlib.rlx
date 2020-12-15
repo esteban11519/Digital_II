@@ -2,12 +2,12 @@
 2019.2
 Nov  6 2019
 21:42:20
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.sim/sim_1/behav/xsim/glbl.v,1595868982,verilog,,,,glbl,,,,,,,,
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.srcs/sources_1/imports/sources/VGA_driver.v,1595972333,verilog,,/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/buffer_ram_dp.v,,VGA_Driver,,,,,,,,
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/simulation/test_cam_TB.v,1607931758,verilog,,,,test_cam_TB,,,,,,,,
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4.v,1595868982,verilog,,/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4_clk_wiz.v,,clk24_25_nexys4,,,,,,,,
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4_clk_wiz.v,1595868982,verilog,,/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/procesamiento.v,,clk24_25_nexys4_clk_wiz,,,,,,,,
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/buffer_ram_dp.v,1607932205,verilog,,/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/cam_read.v,,buffer_ram_dp,,,,,,,,
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/cam_read.v,1598307215,verilog,,/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4.v,,cam_read,,,,,,,,
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/procesamiento.v,1607931114,verilog,,/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/test_cam.v,,procesamiento,,,,,,,,
-/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/test_cam.v,1607931972,verilog,,/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/simulation/test_cam_TB.v,,test_cam,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.sim/sim_1/behav/xsim/glbl.v,1595868982,verilog,,,,glbl,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.srcs/sources_1/imports/sources/VGA_driver.v,1595972333,verilog,,/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/buffer_ram_dp.v,,VGA_Driver,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/simulation/test_cam_TB.v,1607931758,verilog,,,,test_cam_TB,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4.v,1595868982,verilog,,/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4_clk_wiz.v,,clk24_25_nexys4,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4_clk_wiz.v,1595868982,verilog,,/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/procesamiento.v,,clk24_25_nexys4_clk_wiz,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/buffer_ram_dp.v,1607996772,verilog,,/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/cam_read.v,,buffer_ram_dp,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/cam_read.v,1598307215,verilog,,/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4.v,,cam_read,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/procesamiento.v,1608053424,verilog,,/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/test_cam.v,,procesamiento,,,,,,,,
+/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/test_cam.v,1607996607,verilog,,/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/simulation/test_cam_TB.v,,test_cam,,,,,,,,

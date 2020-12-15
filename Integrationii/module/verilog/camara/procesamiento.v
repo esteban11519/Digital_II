@@ -100,16 +100,20 @@ always @(negedge clk) begin
             end
         
         // Para el color
+
         if(R>G&R>B) color<=1; // Color Rojo
         else if(G>R&G>B) color<=2; // Color Verde
         else if(B>R&B>G) color<=3; // Color Azul
+        else color<=0;
         
         // Para la Figura
        //fila_valida-(fila_valida>>4) Se hacen 4 corrimiento a derecha lo que equivale al 1/2^2 porciento de error admitido
        //(fila_valida+(fila_valida>>4))>>1 hace referencia al 50 porciento de las filas validas mas un error. 
-        if(fila_valida>=ancho_mayor&ancho_mayor>(fila_valida-(fila_valida>>2))) figure=1; // Tri�ngulo
-        else if(((fila_valida+(fila_valida>>2))>>1)>ancho_mayor&ancho_mayor>((fila_valida-(fila_valida>>2))>>1)) figure=2; // c�rculo
-        else if(fila_valida>0) figure=3; // cuadrado
+        if(fila_valida>=ancho_mayor&ancho_mayor>(fila_valida-(fila_valida>>2))) figure<=1; // Tri�ngulo
+        else if(((fila_valida+(fila_valida>>2))>>1)>ancho_mayor&ancho_mayor>((fila_valida-(fila_valida>>2))>>1)) figure<=2; // c�rculo
+        else if(fila_valida>0) figure<=3; // cuadrado
+        else figure<=0;
+        
         end
         
         else if (Add_Anc_May)begin
@@ -158,12 +162,12 @@ always @(posedge clk)begin
          Add_Columna<=0;
          Cargar_Dato<=0;
          
-         if(~was_init_procesamiento|enable)begin
+         if((~was_init_procesamiento)|enable)begin
             if(init_procesamiento|enable)begin
                was_init_procesamiento<=1;
                Reset<=0;
                status<=CARGAR_DATO;
-               enable=0;       
+               enable<=0;       
             end
          aux_init_procesamiento<=init_procesamiento;
          end
@@ -185,7 +189,7 @@ always @(posedge clk)begin
          if(proc_data_in[11:8]>=min_R|proc_data_in[7:4]>=min_G|proc_data_in[3:0]>=min_B) begin 
          status<=SEL_COL;
          end
-         else if(col%m==0) begin
+         else if(col>=m) begin
          status<=ADD_ACH_MAY;
          end
          else status<=ADD_COL;
@@ -200,7 +204,7 @@ always @(posedge clk)begin
          Add_Columna<=0;
          Cargar_Dato<=0;
          
-         if(col%m==0)begin
+         if(col>=m)begin
          status<=ADD_ACH_MAY;
          end
          else status<=ADD_COL;
@@ -255,5 +259,3 @@ end
 		
 
 endmodule
-
-

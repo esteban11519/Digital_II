@@ -22,20 +22,20 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.cache/wt [current_project]
-set_property parent.project_path /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.xpr [current_project]
+set_property webtalk.parent_dir /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.cache/wt [current_project]
+set_property parent.project_path /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.cache/ip [current_project]
+set_property ip_output_repo /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/project_1.srcs/sources_1/imports/sources/VGA_driver.v
-  /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/buffer_ram_dp.v
-  /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/cam_read.v
-  /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4.v
-  /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/PLL/clk24_25_nexys4_clk_wiz.v
-  /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/procesamiento.v
-  /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/sources/test_cam.v
+  /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/project_1.srcs/sources_1/imports/sources/VGA_driver.v
+  /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/buffer_ram_dp.v
+  /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/cam_read.v
+  /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4.v
+  /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/PLL/clk24_25_nexys4_clk_wiz.v
+  /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/procesamiento.v
+  /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/test_cam.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,8 +45,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/implementation/Nexys_4.xdc
-set_property used_in_implementation false [get_files /home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/src/implementation/Nexys_4.xdc]
+read_xdc /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/implementation/Nexys_4.xdc
+set_property used_in_implementation false [get_files /home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/implementation/Nexys_4.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

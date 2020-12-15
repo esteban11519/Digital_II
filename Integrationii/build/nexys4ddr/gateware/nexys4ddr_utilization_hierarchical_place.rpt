@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Fri Dec 11 15:25:31 2020
+| Date         : Mon Dec 14 04:18:40 2020
 | Host         : esteban running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -hierarchical -file nexys4ddr_utilization_hierarchical_place.rpt
 | Design       : nexys4ddr
@@ -18,23 +18,24 @@ Table of Contents
 1. Utilization by Hierarchy
 ---------------------------
 
-+-----------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
-|     Instance    |          Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
-+-----------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
-| nexys4ddr       |                   (top) |       3079 |       2975 |     104 |    0 | 2514 |     26 |      0 |            1 |
-|   (nexys4ddr)   |                   (top) |        672 |        656 |      16 |    0 | 1333 |     14 |      0 |            0 |
-|   camara        |                  camara |         72 |         72 |       0 |    0 |   50 |     12 |      0 |            1 |
-|     (camara)    |                  camara |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            1 |
-|     DP_RAM      |           buffer_ram_dp |          0 |          0 |       0 |    0 |    0 |     12 |      0 |            0 |
-|     VGA_640x480 |              VGA_Driver |         49 |         49 |       0 |    0 |   20 |      0 |      0 |            0 |
-|     cam_read    |                cam_read |         23 |         23 |       0 |    0 |   30 |      0 |      0 |            0 |
-|     clk25_24    |         clk24_25_nexys4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            0 |
-|       inst      | clk24_25_nexys4_clk_wiz |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            0 |
-|   picorv32      |                picorv32 |       2335 |       2247 |      88 |    0 | 1131 |      0 |      0 |            0 |
-|     (picorv32)  |                picorv32 |       1617 |       1529 |      88 |    0 |  676 |      0 |      0 |            0 |
-|     pcpi_div    |       picorv32_pcpi_div |        388 |        388 |       0 |    0 |  200 |      0 |      0 |            0 |
-|     pcpi_mul    |       picorv32_pcpi_mul |        331 |        331 |       0 |    0 |  255 |      0 |      0 |            0 |
-+-----------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
++----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
+|       Instance       |          Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
+| nexys4ddr            |                   (top) |      28110 |      11622 |   16488 |    0 | 3040 |     14 |      0 |            1 |
+|   (nexys4ddr)        |                   (top) |        675 |        659 |      16 |    0 | 1334 |     14 |      0 |            0 |
+|   camara             |                  camara |      25130 |       8746 |   16384 |    0 |  577 |      0 |      0 |            1 |
+|     (camara)         |                  camara |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            1 |
+|     DP_RAM           |           buffer_ram_dp |      19687 |       3303 |   16384 |    0 |   12 |      0 |      0 |            0 |
+|     VGA_640x480      |              VGA_Driver |         72 |         72 |       0 |    0 |   20 |      0 |      0 |            0 |
+|     cam_read         |                cam_read |       5213 |       5213 |       0 |    0 |  395 |      0 |      0 |            0 |
+|     clk25_24         |         clk24_25_nexys4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            0 |
+|       inst           | clk24_25_nexys4_clk_wiz |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            0 |
+|     my_procesamiento |           procesamiento |        158 |        158 |       0 |    0 |  150 |      0 |      0 |            0 |
+|   picorv32           |                picorv32 |       2305 |       2217 |      88 |    0 | 1129 |      0 |      0 |            0 |
+|     (picorv32)       |                picorv32 |       1590 |       1502 |      88 |    0 |  674 |      0 |      0 |            0 |
+|     pcpi_div         |       picorv32_pcpi_div |        385 |        385 |       0 |    0 |  200 |      0 |      0 |            0 |
+|     pcpi_mul         |       picorv32_pcpi_mul |        331 |        331 |       0 |    0 |  255 |      0 |      0 |            0 |
++----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
 * Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
 
 

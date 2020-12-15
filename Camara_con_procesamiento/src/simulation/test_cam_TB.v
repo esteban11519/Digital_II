@@ -55,7 +55,9 @@ module test_cam_TB;
     // Senales de prueba ******************************
 // Absolute Address in Esteban's computer
 
-localparam d="/home/esteban/UNAL/GitHub/wp2-simulacion-captura-grupo-03/test_vga.txt";
+localparam d="/home/esteban/UNAL/GitHub/Digital_II/Camara_con_procesamiento/src/sources/test_vga.txt";
+
+
 // Absolute address in Niko's computer
 // localparam d="C:/Users/LucasTheKitten/Desktop/Captura/wp2-simulacion-captura-grupo-03/src/test_vga.txt";	
 // Absolute address in Niko's mac computer
