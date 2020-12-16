@@ -82,12 +82,12 @@ always @(posedge clk) begin
 		end
 end
 ```
-AA
-```
+Se hace uso del **trigger** como reloj para cada paso de los motores. Como ya se menciono cada motor esta condicionado por **direccion** o **direccion2** y ellos son independientes
 
-	
-	
+```
 always@(posedge  trigger) begin
+	
+	//PARA EL MOTOR 1 ------ PARA EL MOTOR 1  ----  PARA EL MOTOR 1
 	if(direccion==1)
 		begin
 			cuen  <= cuen +1;
@@ -119,7 +119,9 @@ always@(posedge  trigger) begin
 		end
 	else
 		cuen  <= 0;
-		
+	
+	//PARA EL MOTOR 2 ------ PARA EL MOTOR 2  ----  PARA EL MOTOR 2
+	
 	if(direccion2==2)
 		begin
 			cuen1  <= cuen1 +1;
