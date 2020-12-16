@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Tue Dec 15 12:57:06 2020
+| Date         : Wed Dec 16 03:05:56 2020
 | Host         : esteban running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -file nexys4ddr_utilization_synth.rpt
 | Design       : nexys4ddr
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 28151 |     0 |     63400 | 44.40 |
-|   LUT as Logic             | 11663 |     0 |     63400 | 18.40 |
+| Slice LUTs*                | 28080 |     0 |     63400 | 44.29 |
+|   LUT as Logic             | 11592 |     0 |     63400 | 18.28 |
 |   LUT as Memory            | 16488 |     0 |     19000 | 86.78 |
 |     LUT as Distributed RAM | 16488 |     0 |           |       |
 |     LUT as Shift Register  |     0 |     0 |           |       |
-| Slice Registers            |  3030 |     0 |    126800 |  2.39 |
-|   Register as Flip Flop    |  3030 |     0 |    126800 |  2.39 |
+| Slice Registers            |  2564 |     0 |    126800 |  2.02 |
+|   Register as Flip Flop    |  2564 |     0 |    126800 |  2.02 |
 |   Register as Latch        |     0 |     0 |    126800 |  0.00 |
 | F7 Muxes                   |  1650 |     0 |     31700 |  5.21 |
 | F8 Muxes                   |   768 |     0 |     15850 |  4.85 |
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 164   |          Yes |         Set |            - |
-| 2866  |          Yes |       Reset |            - |
+| 163   |          Yes |         Set |            - |
+| 2401  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -94,9 +94,9 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   74 |    74 |       210 | 35.24 |
-|   IOB Master Pads           |   36 |       |           |       |
-|   IOB Slave Pads            |   34 |       |           |       |
+| Bonded IOB                  |   72 |    72 |       210 | 34.29 |
+|   IOB Master Pads           |   34 |       |           |       |
+|   IOB Slave Pads            |   35 |       |           |       |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -153,19 +153,19 @@ Table of Contents
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
 | RAMD64E    | 16472 |  Distributed Memory |
-| LUT6       |  7156 |                 LUT |
-| LUT4       |  4136 |                 LUT |
-| FDRE       |  2866 |        Flop & Latch |
+| LUT6       |  7128 |                 LUT |
+| LUT4       |  3835 |                 LUT |
+| FDRE       |  2401 |        Flop & Latch |
 | MUXF7      |  1650 |               MuxFx |
-| LUT5       |   981 |                 LUT |
+| LUT5       |   952 |                 LUT |
+| LUT2       |   896 |                 LUT |
 | MUXF8      |   768 |               MuxFx |
-| LUT2       |   693 |                 LUT |
-| LUT3       |   506 |                 LUT |
-| LUT1       |   431 |                 LUT |
-| CARRY4     |   377 |          CarryLogic |
-| FDSE       |   164 |        Flop & Latch |
-| OBUF       |    49 |                  IO |
-| IBUF       |    25 |                  IO |
+| LUT3       |   623 |                 LUT |
+| CARRY4     |   353 |          CarryLogic |
+| LUT1       |   312 |                 LUT |
+| FDSE       |   163 |        Flop & Latch |
+| OBUF       |    46 |                  IO |
+| IBUF       |    26 |                  IO |
 | RAMD32     |    24 |  Distributed Memory |
 | RAMB36E1   |    14 |        Block Memory |
 | RAMS32     |     8 |  Distributed Memory |

@@ -31,7 +31,7 @@ _io = [
     ("btnl", 0, Pins("P17"), IOStandard("LVCMOS33")),
 
     ("ledRGB", 1,
-        Subsignal("r", Pins("N15")),
+        #Subsignal("r", Pins("N15")),
         Subsignal("g", Pins("M16")),
         Subsignal("b", Pins("R12")),
         IOStandard("LVCMOS33")),
@@ -83,8 +83,14 @@ _io = [
     ("cam_vsync", 0, Pins("D18"), IOStandard("LVCMOS33")),
     ("cam_href", 0, Pins("E17"), IOStandard("LVCMOS33")),
     ("cam_pwdn", 0, Pins("G18"), IOStandard("LVCMOS33")),
+
+    # Radar
+
+    ("echo", 0, Pins("K1"), IOStandard("LVCMOS33")),
+    ("trigger", 0, Pins("F6"), IOStandard("LVCMOS33")),
+    ("PWM", 0, Pins("J2"), IOStandard("LVCMOS33")),
+    ("done", 0, Pins("N15"), IOStandard("LVCMOS33")),
     
- 
 
     ("cam_data_in", 0, Pins("H16"), IOStandard("LVCMOS33")),
     ("cam_data_in", 1, Pins("H14"), IOStandard("LVCMOS33")),

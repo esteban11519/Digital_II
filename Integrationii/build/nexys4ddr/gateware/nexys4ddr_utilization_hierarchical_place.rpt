@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Tue Dec 15 12:58:19 2020
+| Date         : Wed Dec 16 03:08:14 2020
 | Host         : esteban running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -hierarchical -file nexys4ddr_utilization_hierarchical_place.rpt
 | Design       : nexys4ddr
@@ -21,20 +21,23 @@ Table of Contents
 +----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
 |       Instance       |          Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
 +----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
-| nexys4ddr            |                   (top) |      28130 |      11642 |   16488 |    0 | 3040 |     14 |      0 |            1 |
-|   (nexys4ddr)        |                   (top) |        678 |        662 |      16 |    0 | 1334 |     14 |      0 |            0 |
-|   camara             |                  camara |      25142 |       8758 |   16384 |    0 |  577 |      0 |      0 |            1 |
+| nexys4ddr            |                   (top) |      28058 |      11570 |   16488 |    0 | 2574 |     14 |      0 |            1 |
+|   (nexys4ddr)        |                   (top) |        282 |        266 |      16 |    0 |  698 |     14 |      0 |            0 |
+|   camara             |                  camara |      25202 |       8818 |   16384 |    0 |  635 |      0 |      0 |            1 |
 |     (camara)         |                  camara |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            1 |
 |     DP_RAM           |           buffer_ram_dp |      19687 |       3303 |   16384 |    0 |   12 |      0 |      0 |            0 |
-|     VGA_640x480      |              VGA_Driver |         85 |         85 |       0 |    0 |   20 |      0 |      0 |            0 |
-|     cam_read         |                cam_read |       5214 |       5214 |       0 |    0 |  395 |      0 |      0 |            0 |
+|     VGA_640x480      |              VGA_Driver |         84 |         84 |       0 |    0 |   20 |      0 |      0 |            0 |
+|     cam_read         |                cam_read |       5275 |       5275 |       0 |    0 |  455 |      0 |      0 |            0 |
 |     clk25_24         |         clk24_25_nexys4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            0 |
 |       inst           | clk24_25_nexys4_clk_wiz |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            0 |
-|     my_procesamiento |           procesamiento |        156 |        156 |       0 |    0 |  150 |      0 |      0 |            0 |
-|   picorv32           |                picorv32 |       2311 |       2223 |      88 |    0 | 1129 |      0 |      0 |            0 |
-|     (picorv32)       |                picorv32 |       1592 |       1504 |      88 |    0 |  674 |      0 |      0 |            0 |
+|     my_procesamiento |           procesamiento |        156 |        156 |       0 |    0 |  148 |      0 |      0 |            0 |
+|   picorv32           |                picorv32 |       2079 |       1991 |      88 |    0 | 1129 |      0 |      0 |            0 |
+|     (picorv32)       |                picorv32 |       1360 |       1272 |      88 |    0 |  674 |      0 |      0 |            0 |
 |     pcpi_div         |       picorv32_pcpi_div |        388 |        388 |       0 |    0 |  200 |      0 |      0 |            0 |
 |     pcpi_mul         |       picorv32_pcpi_mul |        331 |        331 |       0 |    0 |  255 |      0 |      0 |            0 |
+|   radar              |                   radar |        495 |        495 |       0 |    0 |  112 |      0 |      0 |            0 |
+|     servo            |                   servo |         76 |         76 |       0 |    0 |   33 |      0 |      0 |            0 |
+|     ultrasonido2     |            ultrasonido1 |        419 |        419 |       0 |    0 |   79 |      0 |      0 |            0 |
 +----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
 * Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
 

@@ -14,6 +14,9 @@ read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/PLL/clk24_25_nexys4.v}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/PLL/clk24_25_nexys4_0.v}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/camara/PLL/clk24_25_nexys4_clk_wiz.v}
+read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/radar/radar.v}
+read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/radar/servo.v}
+read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/module/verilog/radar/ultrasonido1.v}
 read_verilog {/opt/litex/pythondata-cpu-picorv32/pythondata_cpu_picorv32/verilog/picorv32.v}
 read_verilog {/home/esteban/UNAL/GitHub/Digital_II/Integrationii/build/nexys4ddr/gateware/nexys4ddr.v}
 

@@ -165,30 +165,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports {display_digit6}]
 set_property LOC U13 [get_ports {display_digit7}]
 set_property IOSTANDARD LVCMOS33 [get_ports {display_digit7}]
 
-# ledRGB:1.r
-set_property LOC N15 [get_ports {ledRGB1_r}]
-set_property IOSTANDARD LVCMOS33 [get_ports {ledRGB1_r}]
-
-# ledRGB:1.g
-set_property LOC M16 [get_ports {ledRGB1_g}]
-set_property IOSTANDARD LVCMOS33 [get_ports {ledRGB1_g}]
-
-# ledRGB:1.b
-set_property LOC R12 [get_ports {ledRGB1_b}]
-set_property IOSTANDARD LVCMOS33 [get_ports {ledRGB1_b}]
-
-# ledRGB:2.r
-set_property LOC N16 [get_ports {ledRGB2_r}]
-set_property IOSTANDARD LVCMOS33 [get_ports {ledRGB2_r}]
-
-# ledRGB:2.g
-set_property LOC R11 [get_ports {ledRGB2_g}]
-set_property IOSTANDARD LVCMOS33 [get_ports {ledRGB2_g}]
-
-# ledRGB:2.b
-set_property LOC G14 [get_ports {ledRGB2_b}]
-set_property IOSTANDARD LVCMOS33 [get_ports {ledRGB2_b}]
-
 # vga_red:0
 set_property LOC A3 [get_ports {vga_red0}]
 set_property IOSTANDARD LVCMOS33 [get_ports {vga_red0}]
@@ -296,6 +272,22 @@ set_property IOSTANDARD LVCMOS33 [get_ports {cam_vsync}]
 # cam_href:0
 set_property LOC E17 [get_ports {cam_href}]
 set_property IOSTANDARD LVCMOS33 [get_ports {cam_href}]
+
+# echo:0
+set_property LOC K1 [get_ports {echo}]
+set_property IOSTANDARD LVCMOS33 [get_ports {echo}]
+
+# done:0
+set_property LOC N15 [get_ports {done}]
+set_property IOSTANDARD LVCMOS33 [get_ports {done}]
+
+# trigger:0
+set_property LOC F6 [get_ports {trigger}]
+set_property IOSTANDARD LVCMOS33 [get_ports {trigger}]
+
+# PWM:0
+set_property LOC J2 [get_ports {PWM}]
+set_property IOSTANDARD LVCMOS33 [get_ports {PWM}]
 
 ################################################################################
 # Design constraints

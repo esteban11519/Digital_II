@@ -10,6 +10,7 @@
 #include "delay.h"
 #include "display.h"
 #include "camara.h"
+#include "radar.h"
 
 static char *readstr(void)
 {
@@ -80,6 +81,7 @@ static void help(void)
 	puts("rgbled                          - rgb led test");
 	puts("vga                             - vga test");
 	puts("camara                             - camara test");
+	puts("radar                             - radar test"); 
 }
 
 static void reboot(void)
@@ -149,7 +151,7 @@ static void switch_test(void)
 		}
 	}
 }
-
+/*
 static void rgbled_test(void)
 {
 	unsigned int T = 128;
@@ -183,7 +185,7 @@ static void rgbled_test(void)
 	
 
 
-}
+} */
 
 
 /*
@@ -254,14 +256,30 @@ static void camara_test(void)
 			
 		delay_ms(500);
 	} 
+}
 
+static void radar_test(void)
+{
+		
+	printf("Hola mundo");
+		
+	while(!(buttons_in_read()&1)) {
 
-		 
+    radar_cntrl_boton_cambiar_grados_write(1);
+	delay_ms(500);
+
+	radar_cntrl_boton_cambiar_grados_write(2);
+	delay_ms(500);
 	
+	radar_cntrl_boton_cambiar_grados_write(3);
+	delay_ms(500);
 
+	radar_cntrl_ultra_write(1);
+	delay_ms(5000);	
+	radar_cntrl_ultra_write(0);
+
+	}	 
 	
-			//printf("la habilitacion de la interrupción esta en : %i %i %i\n",camara_cntrl_ev_enable_read(), camara_cntrl_ev_status_read(), camara_cntrl_ev_pending_read());
-			//camara_isr();
 }
 
 static void console_service(void)
@@ -282,12 +300,14 @@ static void console_service(void)
 		switch_test();
 	else if(strcmp(token, "display") == 0)
 		display_test();
-	else if(strcmp(token, "rgbled") == 0)
-		rgbled_test();
+//	else if(strcmp(token, "rgbled") == 0)
+//		rgbled_test();
 //	else if(strcmp(token, "vga") == 0)
 //		vga_test();
 	else if(strcmp(token, "camara") == 0)
 		camara_test();
+	else if(strcmp(token, "radar") == 0)
+		radar_test();
 	prompt();
 }
 

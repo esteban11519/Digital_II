@@ -16,6 +16,7 @@ from module import rgbled
 from module import sevensegment
 from module import vgacontroller
 from module import camara
+from module import radar
 
 
 
@@ -29,7 +30,7 @@ class BaseSoC(SoCCore):
 		platform = tarjeta.Platform()
 		
 		## add source verilog
-
+		# camara.v
 		platform.add_source("module/verilog/camara/camara.v")
 		platform.add_source("module/verilog/camara/buffer_ram_dp.v")
 		platform.add_source("module/verilog/camara/cam_read.v")
@@ -40,7 +41,11 @@ class BaseSoC(SoCCore):
 		platform.add_source("module/verilog/camara/PLL/clk24_25_nexys4_clk_wiz.v")
 		
 		
-
+		# Radar
+		platform.add_source("module/verilog/radar/radar.v")
+		platform.add_source("module/verilog/radar/servo.v")
+		platform.add_source("module/verilog/radar/ultrasonido1.v")
+		
 
 
 		# SoC with CPU
@@ -76,11 +81,11 @@ class BaseSoC(SoCCore):
 		self.submodules.display = sevensegment.SevenSegment(display_segments,display_digits)
 
 		# RGB leds
-		SoCCore.add_csr(self,"ledRGB_1")
-		self.submodules.ledRGB_1 = rgbled.RGBLed(platform.request("ledRGB",1))
+		#SoCCore.add_csr(self,"ledRGB_1")
+		#self.submodules.ledRGB_1 = rgbled.RGBLed(platform.request("ledRGB",1))
 		
-		SoCCore.add_csr(self,"ledRGB_2")
-		self.submodules.ledRGB_2 = rgbled.RGBLed(platform.request("ledRGB",2))
+		#SoCCore.add_csr(self,"ledRGB_2")
+		#self.submodules.ledRGB_2 = rgbled.RGBLed(platform.request("ledRGB",2))
 		
 				
 		# VGA
@@ -98,6 +103,11 @@ class BaseSoC(SoCCore):
 		cam_data_in = Cat(*[platform.request("cam_data_in", i) for i in range(8)])		
 		self.submodules.camara_cntrl = camara.Camara(vsync,hsync,vga_red,vga_green,vga_blue,platform.request("cam_xclk"),platform.request("cam_pwdn"),platform.request("cam_pclk"),cam_data_in,platform.request("cam_vsync"),platform.request("cam_href"))
 		
+		# radar
+		SoCCore.add_csr(self,"radar_cntrl") # Incluir mapa de memoria
+		self.submodules.radar_cntrl = radar.Radar(platform.request("echo"),platform.request("done"),platform.request("trigger"),platform.request("PWM"))
+		
+
 # Build --------------------------------------------------------------------------------------------
 if __name__ == "__main__":
 	builder = Builder(BaseSoC(),csr_csv="Soc_MemoryMap.csv")

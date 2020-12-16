@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Tue Dec 15 12:57:05 2020
+| Date         : Wed Dec 16 03:05:55 2020
 | Host         : esteban running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -hierarchical -file nexys4ddr_utilization_hierarchical_synth.rpt
 | Design       : nexys4ddr
@@ -21,20 +21,23 @@ Table of Contents
 +----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
 |       Instance       |          Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
 +----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
-| nexys4ddr            |                   (top) |      28151 |      11663 |   16488 |    0 | 3030 |     14 |      0 |            1 |
-|   (nexys4ddr)        |                   (top) |        679 |        663 |      16 |    0 | 1324 |     14 |      0 |            0 |
-|   camara             |                  camara |      25143 |       8759 |   16384 |    0 |  577 |      0 |      0 |            1 |
+| nexys4ddr            |                   (top) |      28080 |      11592 |   16488 |    0 | 2564 |     14 |      0 |            1 |
+|   (nexys4ddr)        |                   (top) |        283 |        267 |      16 |    0 |  688 |     14 |      0 |            0 |
+|   camara             |                  camara |      25203 |       8819 |   16384 |    0 |  635 |      0 |      0 |            1 |
 |     (camara)         |                  camara |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            1 |
 |     DP_RAM           |           buffer_ram_dp |      19687 |       3303 |   16384 |    0 |   12 |      0 |      0 |            0 |
 |     VGA_640x480      |              VGA_Driver |         85 |         85 |       0 |    0 |   20 |      0 |      0 |            0 |
-|     cam_read         |                cam_read |       5215 |       5215 |       0 |    0 |  395 |      0 |      0 |            0 |
+|     cam_read         |                cam_read |       5275 |       5275 |       0 |    0 |  455 |      0 |      0 |            0 |
 |     clk25_24         |         clk24_25_nexys4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            0 |
 |       inst           | clk24_25_nexys4_clk_wiz |          0 |          0 |       0 |    0 |    0 |      0 |      0 |            0 |
-|     my_procesamiento |           procesamiento |        156 |        156 |       0 |    0 |  150 |      0 |      0 |            0 |
-|   picorv32           |                picorv32 |       2329 |       2241 |      88 |    0 | 1129 |      0 |      0 |            0 |
-|     (picorv32)       |                picorv32 |       1610 |       1522 |      88 |    0 |  674 |      0 |      0 |            0 |
+|     my_procesamiento |           procesamiento |        156 |        156 |       0 |    0 |  148 |      0 |      0 |            0 |
+|   picorv32           |                picorv32 |       2099 |       2011 |      88 |    0 | 1129 |      0 |      0 |            0 |
+|     (picorv32)       |                picorv32 |       1380 |       1292 |      88 |    0 |  674 |      0 |      0 |            0 |
 |     pcpi_div         |       picorv32_pcpi_div |        388 |        388 |       0 |    0 |  200 |      0 |      0 |            0 |
 |     pcpi_mul         |       picorv32_pcpi_mul |        331 |        331 |       0 |    0 |  255 |      0 |      0 |            0 |
+|   radar              |                   radar |        495 |        495 |       0 |    0 |  112 |      0 |      0 |            0 |
+|     servo            |                   servo |         76 |         76 |       0 |    0 |   33 |      0 |      0 |            0 |
+|     ultrasonido2     |            ultrasonido1 |        419 |        419 |       0 |    0 |   79 |      0 |      0 |            0 |
 +----------------------+-------------------------+------------+------------+---------+------+------+--------+--------+--------------+
 
 
