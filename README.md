@@ -3,7 +3,7 @@
 
 
 ## Motor paso a paso
-Los motores paso a paso seran utilzados para el movimiento de las dos llantas principales del motor
+Los motores paso a paso seran utilzados para el movimiento de las dos llantas principales del robot, cuando las llantas se mueven en la misma direccion permiten el desplazamiendo hacia delante o hacia atras, cuando una llanta queda bloqueada y la otra gira: logra hacer que el robot gire, según convenga, a la derecha o hacia la izquierda.
 ```
 `timescale 1ns/1ps
 module motor( input reset,input clk,
