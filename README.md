@@ -1,6 +1,10 @@
 # Digital_II
 [![N|Solid](https://www.universidadesvirtuales.com.co/logos/original/logo-universidad-nacional-de-colombia.png)](https://www.universidadesvirtuales.com.co/logos/original/logo-universidad-nacional-de-colombia.png)
 
+* >Jose Celis
+* >Julian Pulido
+* >Esteban Landino
+* >Julian Escobar
 
 ## Motor paso a paso
 Los motores paso a paso seran utilzados para el movimiento de las dos llantas principales del robot, cuando las llantas se mueven en la misma direccion permiten el desplazamiendo hacia delante o hacia atras, cuando una llanta queda bloqueada y la otra gira: logra hacer que el robot gire, según convenga, a la derecha o hacia la izquierda.
@@ -21,8 +25,13 @@ module motor(
     output reg C1, 
     output reg D1);
 ~~~
-Las salidas A,B,C,D se necesitan para poder controlar uno de los motores y A1,B1,C1,D1 para el otro.
+Las salidas A,B,C,D se necesitan para poder controlar uno de los motores y A1,B1,C1,D1 para el otro. 
 
+direccion y direccion2 son estradas de 2 bits, lo que para nosotros representa 4 posibles estados:
+* 1.) Giro Horario
+* 2.) Giro Antihorario
+* 3.) No girar
+* 4.) No girar
 
 ```
     parameter divH = 50000; 
