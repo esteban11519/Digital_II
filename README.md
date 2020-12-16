@@ -82,7 +82,12 @@ always @(posedge clk) begin
 		end
 end
 ```
-Se hace uso del **trigger** como reloj para cada paso de los motores. Como ya se menciono cada motor esta condicionado por **direccion** o **direccion2** y ellos son independientes
+Se hace uso del **trigger** como reloj para cada paso de los motores. Como ya se menciono cada motor esta condicionado por **direccion** o **direccion2** y ellos son independientes del otro.  
+Cada motor tiene su propio contador, ya sea **cuen** o **cuen1**, los cuales se encargan de pasar de un paso a otro (desde el 1 al 8), en cada paso se energizan o se apagan las bobinas correspondientes, tal que se siga la secuencia que indican en el siguiente [LINK](http://robots-argentina.com.ar/MotorPP_basico.htm) o en la imagen:
+
+[![N|Solid](http://robots-argentina.com.ar/img/MotorPP_unipolar_tablaht.gif)](http://robots-argentina.com.ar/img/MotorPP_unipolar_tablaht.gif)
+Para la rotacion antihoraria bastó con cambiar el orden de los pasos.
+
 
 ```
 always@(posedge  trigger) begin
