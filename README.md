@@ -8,7 +8,8 @@
 
 ## Motor paso a paso
 Los motores paso a paso seran utilzados para el movimiento de las dos llantas principales del robot, cuando las llantas se mueven en la misma direccion permiten el desplazamiendo hacia delante o hacia atras, cuando una llanta queda bloqueada y la otra gira: logra hacer que el robot gire, según convenga, a la derecha o hacia la izquierda.
-A continuación se muestran las <span style="color:red">cardenales</span> entradas y salidas del modulo: a
+A continuación se muestran las  entradas y salidas del modulo: 
+
 ~~~
 `timescale 1ns/1ps
 module motor(
@@ -25,9 +26,8 @@ module motor(
     output reg C1, 
     output reg D1);
 ~~~
-Las salidas A,B,C,D se necesitan para poder controlar uno de los motores y A1,B1,C1,D1 para el otro. 
-
-direccion y direccion2 son estradas de 2 bits, lo que para nosotros representa 4 posibles estados:
+Las salidas **A**,**B**,**C**,**D** se necesitan para poder controlar uno de los motores y **A1**,**B1**,**C1**,**D1** para el otro.  
+**direccion** y **direccion2** son estradas de 2 bits, lo que para nosotros representa 4 posibles estados de los motores:
 * 1.) Giro Horario
 * 2.) Giro Antihorario
 * 3.) No girar
@@ -48,7 +48,7 @@ Posteriormente se definen algunos parametros y algunos contadores:
 	initial cuen1=0;
 	initial trigger=0;
  ```
-Los parametros divH y divL se utilizan como tope para el trigger, que como se muestra en la seccion de adelante es un divisor de frecuencia.
+Los parametros **divH** y **divL** se utilizan como tope para el trigger, que como se muestra en la seccion de adelante es un divisor de frecuencia; este divisor es necesario debido a que los motores y driver de nuestra referencia ([2byj-48][uln2003]) 
 
 
 ```
