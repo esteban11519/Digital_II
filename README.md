@@ -4,15 +4,27 @@
 
 ## Motor paso a paso
 Los motores paso a paso seran utilzados para el movimiento de las dos llantas principales del robot, cuando las llantas se mueven en la misma direccion permiten el desplazamiendo hacia delante o hacia atras, cuando una llanta queda bloqueada y la otra gira: logra hacer que el robot gire, según convenga, a la derecha o hacia la izquierda.
-```
+A continuación se muestran las entradas y salidas del modulo:
+~~~
 `timescale 1ns/1ps
-module motor( input reset,input clk,
- output reg A, output reg B,output reg C, output reg D,
- output reg A1, output reg B1,output reg C1, output reg D1,
-  input [1:0]direccion,   input [1:0]direccion2);
+module motor(
+    input reset,
+    input clk,
+    input [1:0]direccion,   
+    input [1:0]direccion2,
+    output reg A, 
+    output reg B,
+    output reg C, 
+    output reg D,
+    output reg A1, 
+    output reg B1,
+    output reg C1, 
+    output reg D1);
+~~~
+Las salidas A,B,C,D se necesitan para poder controlar uno de los motores y A1,B1,C1,D1 para el otro.
 
 
-
+```
     parameter divH = 50000; 
     parameter divL = 100000;
 	integer  trigger;
