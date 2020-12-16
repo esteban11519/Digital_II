@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Mon Dec 14 04:17:36 2020
+| Date         : Tue Dec 15 12:57:04 2020
 | Host         : esteban running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_timing_summary -file nexys4ddr_timing_synth.rpt
 | Design       : nexys4ddr
@@ -71,7 +71,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 135504 pins that are not constrained for maximum delay. (HIGH)
+ There are 135512 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
