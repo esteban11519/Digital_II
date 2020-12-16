@@ -43,13 +43,15 @@ Posteriormente se definen algunos parametros y algunos contadores:
 	integer	countF;
 	integer	cuen;
 	integer	cuen1;
+    //Condiciones iniciales: (TODOS LOS CONTADORES EN CERO 0 ) 
 	initial countF = 0;
 	initial cuen=0;
 	initial cuen1=0;
 	initial trigger=0;
  ```
-Los parametros **divH** y **divL** se utilizan como tope para el trigger, que como se muestra en la seccion de adelante es un divisor de frecuencia; este divisor es necesario debido a que los motores y driver de nuestra referencia ([2byj-48][uln2003]) 
 
+
+Los parametros **divH** y **divL** se utilizan como tope para el correspondiente contador **countF**, en resumen: *Cada periodo del **clk** se aumenta en 1 el **countF**, cuando el **countF** es igual al valor de **divH** el **trigger** realiza un flanco de subida y cuando **countF** es igual al valor de **divL** entonces el trigger realiza un flanco de bajada, en este ultimo paso el **countF** se reinicia a 0*; asi que el **trigger** es ahora nuestro nuevo reloj; este divisor de frecuencia es necesario debido a que los motores y driver de nuestra referencia ([2byj-48][uln2003]) no funcionan a una frecuencia tan alta (100MHz).
 
 ```
 //Trigger
