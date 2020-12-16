@@ -52,7 +52,7 @@ Posteriormente se definen algunos parametros y algunos contadores:
 
 
 Los parametros **divH** y **divL** se utilizan como tope para el correspondiente contador **countF**, en resumen: *En cada periodo del **clk** se aumenta en 1 el **countF**, cuando el **countF** es igual al valor de **divH** el **trigger** realiza un flanco de subida y cuando **countF** es igual al valor de **divL** entonces el trigger realiza un flanco de bajada, en este ultimo paso el **countF** se reinicia a 0*; asi que el **trigger** es ahora nuestro nuevo reloj; este divisor de frecuencia es necesario debido a que los motores y driver de nuestra referencia ([2byj-48][uln2003]) no funcionan a una frecuencia tan alta (100MHz). En este paso convertimos 100MHz en 1KHz. La formula es:
-[![N|Solid](https://ibb.co/G5yQkGC)](https://ibb.co/G5yQkGC)
+[![N|Solid](https://i.ibb.co/9r6H2By/imagen-2020-12-16-175106.png)](https://i.ibb.co/9r6H2By/imagen-2020-12-16-175106.png)
 
 
 ```
